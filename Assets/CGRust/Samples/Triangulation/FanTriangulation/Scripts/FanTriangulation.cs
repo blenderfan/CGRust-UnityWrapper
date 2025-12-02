@@ -1,5 +1,6 @@
 using CGRust.Wrapper;
 using Unity.Collections;
+using Unity.Collections.LowLevel.Unsafe;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -8,30 +9,36 @@ namespace CGRust.Samples.FanTriangulation
 
     public class FanTriangulation : MonoBehaviour
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        public Material material;
+
         void Start()
         {
 
-            NativeArray<float2> points = new NativeArray<float2>(new float2[]
+            UnsafeList<float2> points = PolygonMethods.CreateRegularPolygon(new float2(0.0f, 0.0f), 1.0f, 6);
+            var triangulation = PolygonMethods.TriangulatePolygon(points);
+            var mesh = new Mesh();
+
+            Vector3[] vertices = new Vector3[points.Length];
+            for(int i = 0; i < vertices.Length; i++)
             {
-                new float2(0.0f, 0.0f),
-                new float2(1.0f, 0.0f),
-                new float2(1.0f, 1.0f),
-                new float2(0.0f, 1.0f),
-            }, Allocator.TempJob);
+                vertices[i] = new Vector3(points[i].x, points[i].y, 0.0f);
+            }
+            int[] triangles = new int[triangulation.Length];
+            for(int i = triangulation.Length - 1; i >= 0; i--)
+            {
+                triangles[triangulation.Length - i - 1] = (int)triangulation[i];
+            }
 
-            var triangulation = PolygonTriangulation.TriangulatePolygon(points);
+            mesh.SetVertices(vertices);
+            mesh.SetTriangles(triangles, 0);
+            mesh.RecalculateBounds();
+            mesh.RecalculateNormals();
 
-            Debug.Log(triangulation.Length);
+            var mf = this.GetComponent<MeshFilter>();
+            mf.sharedMesh = mesh;
 
-            points.Dispose();
-            triangulation.Dispose();
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+            var mr = this.GetComponent<MeshRenderer>();
+            mr.sharedMaterial = this.material;
         }
     }
 

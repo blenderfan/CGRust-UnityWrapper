@@ -14,9 +14,12 @@ namespace CGRust.Samples.FanTriangulation
         void Start()
         {
 
-            UnsafeList<float2> points = PolygonMethods.CreateRegularPolygon(new float2(0.0f, 0.0f), 1.0f, 6);
-            var triangulation = PolygonMethods.TriangulatePolygon(points);
+            var pointsArray = PolygonMethods.CreateRegularPolygon(new float2(0.0f, 0.0f), 1.0f, 6);
+            var triangulationArray = PolygonMethods.TriangulatePolygon(pointsArray);
             var mesh = new Mesh();
+
+            var points = pointsArray.data;
+            var triangulation = triangulationArray.data;
 
             Vector3[] vertices = new Vector3[points.Length];
             for(int i = 0; i < vertices.Length; i++)
@@ -39,6 +42,9 @@ namespace CGRust.Samples.FanTriangulation
 
             var mr = this.GetComponent<MeshRenderer>();
             mr.sharedMaterial = this.material;
+
+            pointsArray.Dispose();
+            triangulationArray.Dispose();
         }
     }
 

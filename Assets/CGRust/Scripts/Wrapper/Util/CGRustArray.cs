@@ -5,7 +5,11 @@ using UnityEngine;
 
 namespace CGRust.Wrapper
 {
-
+    /// <summary>
+    /// Helper class for handling arrays allocated in Rust. The Container can be used in
+    /// Burst Jobs! However, disposing has to be done outside the job.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public struct CGRustArray<T> where T : unmanaged
     {
 

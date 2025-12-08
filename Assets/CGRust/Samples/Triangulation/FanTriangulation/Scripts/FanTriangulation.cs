@@ -3,6 +3,7 @@ using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace CGRust.Samples.FanTriangulation
 {
@@ -27,9 +28,9 @@ namespace CGRust.Samples.FanTriangulation
                 vertices[i] = new Vector3(points[i].x, points[i].y, 0.0f);
             }
             int[] triangles = new int[triangulation.Length];
-            for(int i = triangulation.Length - 1; i >= 0; i--)
+            for(int i = 0; i < triangulation.Length; i++)
             {
-                triangles[triangulation.Length - i - 1] = (int)triangulation[i];
+                triangles[i] = (int)triangulation[i];
             }
 
             mesh.SetVertices(vertices);

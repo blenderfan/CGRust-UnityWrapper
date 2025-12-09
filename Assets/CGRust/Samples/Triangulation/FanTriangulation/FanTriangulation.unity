@@ -287,6 +287,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d737bb746819db643b32e10cfc4eaf5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  polygonGradient:
+    serializedVersion: 2
+    key0: {r: 0.42721966, g: 0.63458055, b: 0.6679245, a: 1}
+    key1: {r: 0.14236374, g: 0.39782473, b: 0.4867924, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
   material: {fileID: 2100000, guid: 9cd7bc24f5874204a9194e76ba4b7ad1, type: 2}
 --- !u!4 &271793718
 Transform:

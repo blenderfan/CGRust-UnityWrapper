@@ -1,10 +1,6 @@
 using CGRust.Runtime;
-using CGRust.Wrapper;
-using Unity.Collections;
-using Unity.Collections.LowLevel.Unsafe;
 using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 namespace CGRust.Samples.FanTriangulation
 {
@@ -19,10 +15,8 @@ namespace CGRust.Samples.FanTriangulation
         void Start()
         {
 
-            var pointsArray = PolygonMethods.CreateRegularPolygon(new float2(0.0f, 0.0f), 1.0f, 6);
-            var polygon = new Polygon2D(pointsArray);
-
-            var mesh = polygon.ToMesh();
+            var polygon = Polygon2D.CreateRegular(new float2(0.0f, 0.0f), 1.0f, 6);
+            var mesh = polygon.ToMesh(CardinalDirection.Z);
 
             var hardEdgeMesh = MeshUtil.ToHardEdgesMesh(mesh);
             MeshVisualizationUtil.AddTriangleGradientColors(ref hardEdgeMesh, this.polygonGradient);
@@ -33,7 +27,6 @@ namespace CGRust.Samples.FanTriangulation
             var mr = this.GetComponent<MeshRenderer>();
             mr.sharedMaterial = this.material;
 
-            pointsArray.Dispose();
             polygon.Dispose();
         }
     }

@@ -32,8 +32,13 @@ namespace CGRust.Runtime
             this.points.Dispose();
         }
 
+        /// <summary>
+        /// Transforms the Polygons into a Unity Mesh
+        /// </summary>
+        /// <param name="name">The name assigned to the new mesh</param>
+        /// <returns></returns>
         [BurstDiscard]
-        public Mesh ToMesh(string name = "")
+        public Mesh ToMesh(CardinalDirection up, string name = "")
         {
             var triangulationArray = PolygonMethods.TriangulatePolygon(this.points);
 
@@ -49,9 +54,13 @@ namespace CGRust.Runtime
             data.SetIndexBufferParams(triangulationArray.data.Length, idxFormat);
 
             var positions = data.GetVertexData<Vector3>();
+            var planeIndices = up.GetOrthogonalIndices();
             for(int i = 0; i < positions.Length; i++)
             {
-                positions[i] = new Vector3(this.points.data[i].x, this.points.data[i].y, 0.0f);
+                var pos = Vector3.zero;
+                pos[planeIndices.x] = this.points.data[i].x;
+                pos[planeIndices.y] = this.points.data[i].y;
+                positions[i] = pos;
             }
 
             if (idxFormat == IndexFormat.UInt16)
@@ -77,6 +86,20 @@ namespace CGRust.Runtime
             triangulationArray.Dispose();
 
             return mesh;
+        }
+
+        /// <summary>
+        /// Creates a regular polygon where each line segment has the same length and the angle
+        /// between all edges are equal as well.
+        /// </summary>
+        /// <param name="center"></param>
+        /// <param name="radius"></param>
+        /// <param name="corners"></param>
+        /// <returns></returns>
+        public static Polygon2D CreateRegular(float2 center, float radius, int corners)
+        {
+            var pointsArray = PolygonMethods.CreateRegularPolygon(center, radius, corners);
+            return new Polygon2D(pointsArray);
         }
 
         #region IGLTFExportable

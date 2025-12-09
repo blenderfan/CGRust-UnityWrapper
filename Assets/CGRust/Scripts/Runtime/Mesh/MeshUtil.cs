@@ -57,6 +57,8 @@ namespace CGRust.Runtime
                 }
             }
 
+            originalArray.Dispose();
+
             data.subMeshCount = 1;
             data.SetSubMesh(0, new SubMeshDescriptor(0, original.triangles.Length));
 

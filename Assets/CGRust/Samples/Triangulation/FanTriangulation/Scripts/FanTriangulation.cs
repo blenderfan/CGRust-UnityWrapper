@@ -1,4 +1,5 @@
 using CGRust.Runtime;
+using CGRust.Samples;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -12,6 +13,8 @@ namespace CGRust.Samples.FanTriangulation
 
         public Material material;
 
+        public SampleScene scene;
+
         void Start()
         {
 
@@ -21,11 +24,9 @@ namespace CGRust.Samples.FanTriangulation
             var hardEdgeMesh = MeshUtil.ToHardEdgesMesh(mesh);
             MeshVisualizationUtil.AddTriangleGradientColors(ref hardEdgeMesh, this.polygonGradient);
 
-            var mf = this.GetComponent<MeshFilter>();
-            mf.sharedMesh = hardEdgeMesh;
+            SampleUtil.CreateDebugMeshGO(this.scene, this.transform, "polygon", hardEdgeMesh, out var mf, out var mr);
 
-            var mr = this.GetComponent<MeshRenderer>();
-            mr.sharedMaterial = this.material;
+            mr[(int)SampleRenderDebugType.TRIANGLES].sharedMaterial = this.material;
 
             polygon.Dispose();
         }

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Pool;
+using UnityEngine.Rendering;
 
 namespace CGRust.Samples
 {
@@ -17,7 +17,6 @@ namespace CGRust.Samples
 
             return go;
         }
-
 
         public static List<GameObject> CreateDebugMeshGO(SampleScene scene, Transform parent, string name, Mesh sharedMesh, out List<MeshFilter> mf, out List<MeshRenderer> mr)
         {
@@ -37,20 +36,21 @@ namespace CGRust.Samples
 
             mf.Add(regularGO.AddComponent<MeshFilter>());
             mf.Add(wireframeGO.AddComponent<MeshFilter>());
-            mf.Add(pointGO.AddComponent<MeshFilter>());
 
             mr.Add(regularGO.AddComponent<MeshRenderer>());
             mr.Add(wireframeGO.AddComponent<MeshRenderer>());
-            mr.Add(pointGO.AddComponent<MeshRenderer>());
 
             var wireRenderer = mr[(int)SampleRenderDebugType.WIREFRAME];
-
             wireRenderer.sharedMaterial = scene.Materials.WireframeMaterial;
-
+            wireRenderer.shadowCastingMode = ShadowCastingMode.Off;
+            
             for(int i = 0; i < mf.Count; i++)
             {
                 mf[i].sharedMesh = sharedMesh;
             }
+
+            var vertexRenderer = pointGO.AddComponent<VertexRenderer>();
+            vertexRenderer.Init(scene, sharedMesh, parent);
 
             var gos = new List<GameObject>();
             gos.Add(regularGO);

@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sampleMaterials: {fileID: 11400000, guid: 8bd02974f5f0990428d9b7fd3b71a05c, type: 2}
+  samplePrefabs: {fileID: 11400000, guid: b704bd48f3724d34d8f70482dc32f510, type: 2}

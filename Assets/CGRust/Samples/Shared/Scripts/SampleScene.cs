@@ -7,9 +7,12 @@ namespace CGRust.Samples
         [SerializeField]
         private SampleMaterials sampleMaterials;
 
+        [SerializeField]
+        private SamplePrefabs samplePrefabs;
+
         public SampleMaterials Materials => this.sampleMaterials;
 
-
+        public SamplePrefabs Prefabs => this.samplePrefabs;
         
 
     }

@@ -8,8 +8,11 @@ namespace CGRust.Samples
         [SerializeField]
         private Material wireframeMaterial;
 
+        [SerializeField]
+        private Material pointMaterial;
 
         public Material WireframeMaterial => this.wireframeMaterial;
 
+        public Material PointMaterial => this.pointMaterial;
     }
 }

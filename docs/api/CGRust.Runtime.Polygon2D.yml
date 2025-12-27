@@ -1,0 +1,730 @@
+### YamlMime:ManagedReference
+items:
+- uid: CGRust.Runtime.Polygon2D
+  commentId: T:CGRust.Runtime.Polygon2D
+  id: Polygon2D
+  parent: CGRust.Runtime
+  children:
+  - CGRust.Runtime.Polygon2D.#ctor(CGRust.Wrapper.CGRustArray{Unity.Mathematics.float2})
+  - CGRust.Runtime.Polygon2D.CreateRegular(Unity.Mathematics.float2,System.Single,System.Int32)
+  - CGRust.Runtime.Polygon2D.Dispose
+  - CGRust.Runtime.Polygon2D.IsCreated
+  - CGRust.Runtime.Polygon2D.ToMesh(CGRust.Runtime.CardinalDirection,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Polygon2D
+  nameWithType: Polygon2D
+  fullName: CGRust.Runtime.Polygon2D
+  type: Struct
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Runtime/Structures/Polygon2D.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: Polygon2D
+    path: ../Assets/CGRust/Scripts/Runtime/Structures/Polygon2D.cs
+    startLine: 13
+  assemblies:
+  - CGRust.Runtime
+  namespace: CGRust.Runtime
+  summary: A 2D polygon, that can be used within Unity's Job System
+  example: []
+  syntax:
+    content: 'public struct Polygon2D : IDisposable, IGLTFExportable'
+    content.vb: Public Structure Polygon2D Implements IDisposable, IGLTFExportable
+  implements:
+  - System.IDisposable
+  - CGRust.Runtime.IGLTFExportable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: CGRust.Runtime.Polygon2D.#ctor(CGRust.Wrapper.CGRustArray{Unity.Mathematics.float2})
+  commentId: M:CGRust.Runtime.Polygon2D.#ctor(CGRust.Wrapper.CGRustArray{Unity.Mathematics.float2})
+  id: '#ctor(CGRust.Wrapper.CGRustArray{Unity.Mathematics.float2})'
+  parent: CGRust.Runtime.Polygon2D
+  langs:
+  - csharp
+  - vb
+  name: Polygon2D(CGRustArray<float2>)
+  nameWithType: Polygon2D.Polygon2D(CGRustArray<float2>)
+  fullName: CGRust.Runtime.Polygon2D.Polygon2D(CGRust.Wrapper.CGRustArray<Unity.Mathematics.float2>)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Runtime/Structures/Polygon2D.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: .ctor
+    path: ../Assets/CGRust/Scripts/Runtime/Structures/Polygon2D.cs
+    startLine: 21
+  assemblies:
+  - CGRust.Runtime
+  namespace: CGRust.Runtime
+  syntax:
+    content: public Polygon2D(CGRustArray<float2> points)
+    parameters:
+    - id: points
+      type: CGRust.Wrapper.CGRustArray{Unity.Mathematics.float2}
+    content.vb: Public Sub New(points As CGRustArray(Of float2))
+  overload: CGRust.Runtime.Polygon2D.#ctor*
+  nameWithType.vb: Polygon2D.New(CGRustArray(Of float2))
+  fullName.vb: CGRust.Runtime.Polygon2D.New(CGRust.Wrapper.CGRustArray(Of Unity.Mathematics.float2))
+  name.vb: New(CGRustArray(Of float2))
+- uid: CGRust.Runtime.Polygon2D.IsCreated
+  commentId: P:CGRust.Runtime.Polygon2D.IsCreated
+  id: IsCreated
+  parent: CGRust.Runtime.Polygon2D
+  langs:
+  - csharp
+  - vb
+  name: IsCreated
+  nameWithType: Polygon2D.IsCreated
+  fullName: CGRust.Runtime.Polygon2D.IsCreated
+  type: Property
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Runtime/Structures/Polygon2D.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: IsCreated
+    path: ../Assets/CGRust/Scripts/Runtime/Structures/Polygon2D.cs
+    startLine: 26
+  assemblies:
+  - CGRust.Runtime
+  namespace: CGRust.Runtime
+  syntax:
+    content: public bool IsCreated { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCreated As Boolean
+  overload: CGRust.Runtime.Polygon2D.IsCreated*
+- uid: CGRust.Runtime.Polygon2D.Dispose
+  commentId: M:CGRust.Runtime.Polygon2D.Dispose
+  id: Dispose
+  parent: CGRust.Runtime.Polygon2D
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Polygon2D.Dispose()
+  fullName: CGRust.Runtime.Polygon2D.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Runtime/Structures/Polygon2D.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: Dispose
+    path: ../Assets/CGRust/Scripts/Runtime/Structures/Polygon2D.cs
+    startLine: 28
+  assemblies:
+  - CGRust.Runtime
+  namespace: CGRust.Runtime
+  example: []
+  syntax:
+    content: >-
+      [BurstDiscard]
+
+      public void Dispose()
+    content.vb: >-
+      <BurstDiscard>
+
+      Public Sub Dispose()
+  overload: CGRust.Runtime.Polygon2D.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  attributes:
+  - type: Unity.Burst.BurstDiscardAttribute
+    ctor: Unity.Burst.BurstDiscardAttribute.#ctor
+    arguments: []
+- uid: CGRust.Runtime.Polygon2D.ToMesh(CGRust.Runtime.CardinalDirection,System.String)
+  commentId: M:CGRust.Runtime.Polygon2D.ToMesh(CGRust.Runtime.CardinalDirection,System.String)
+  id: ToMesh(CGRust.Runtime.CardinalDirection,System.String)
+  parent: CGRust.Runtime.Polygon2D
+  langs:
+  - csharp
+  - vb
+  name: ToMesh(CardinalDirection, string)
+  nameWithType: Polygon2D.ToMesh(CardinalDirection, string)
+  fullName: CGRust.Runtime.Polygon2D.ToMesh(CGRust.Runtime.CardinalDirection, string)
+  type: Method
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Runtime/Structures/Polygon2D.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: ToMesh
+    path: ../Assets/CGRust/Scripts/Runtime/Structures/Polygon2D.cs
+    startLine: 39
+  assemblies:
+  - CGRust.Runtime
+  namespace: CGRust.Runtime
+  summary: Transforms the Polygons into a Unity Mesh
+  example: []
+  syntax:
+    content: >-
+      [BurstDiscard]
+
+      public Mesh ToMesh(CardinalDirection up, string name = "")
+    parameters:
+    - id: up
+      type: CGRust.Runtime.CardinalDirection
+    - id: name
+      type: System.String
+      description: The name assigned to the new mesh
+    return:
+      type: UnityEngine.Mesh
+      description: ''
+    content.vb: >-
+      <BurstDiscard>
+
+      Public Function ToMesh(up As CardinalDirection, name As String = "") As Mesh
+  overload: CGRust.Runtime.Polygon2D.ToMesh*
+  attributes:
+  - type: Unity.Burst.BurstDiscardAttribute
+    ctor: Unity.Burst.BurstDiscardAttribute.#ctor
+    arguments: []
+  nameWithType.vb: Polygon2D.ToMesh(CardinalDirection, String)
+  fullName.vb: CGRust.Runtime.Polygon2D.ToMesh(CGRust.Runtime.CardinalDirection, String)
+  name.vb: ToMesh(CardinalDirection, String)
+- uid: CGRust.Runtime.Polygon2D.CreateRegular(Unity.Mathematics.float2,System.Single,System.Int32)
+  commentId: M:CGRust.Runtime.Polygon2D.CreateRegular(Unity.Mathematics.float2,System.Single,System.Int32)
+  id: CreateRegular(Unity.Mathematics.float2,System.Single,System.Int32)
+  parent: CGRust.Runtime.Polygon2D
+  langs:
+  - csharp
+  - vb
+  name: CreateRegular(float2, float, int)
+  nameWithType: Polygon2D.CreateRegular(float2, float, int)
+  fullName: CGRust.Runtime.Polygon2D.CreateRegular(Unity.Mathematics.float2, float, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Runtime/Structures/Polygon2D.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: CreateRegular
+    path: ../Assets/CGRust/Scripts/Runtime/Structures/Polygon2D.cs
+    startLine: 98
+  assemblies:
+  - CGRust.Runtime
+  namespace: CGRust.Runtime
+  summary: >-
+    Creates a regular polygon where each line segment has the same length and the angle
+
+    between all edges are equal as well.
+  example: []
+  syntax:
+    content: public static Polygon2D CreateRegular(float2 center, float radius, int corners)
+    parameters:
+    - id: center
+      type: Unity.Mathematics.float2
+      description: ''
+    - id: radius
+      type: System.Single
+      description: ''
+    - id: corners
+      type: System.Int32
+      description: ''
+    return:
+      type: CGRust.Runtime.Polygon2D
+      description: ''
+    content.vb: Public Shared Function CreateRegular(center As float2, radius As Single, corners As Integer) As Polygon2D
+  overload: CGRust.Runtime.Polygon2D.CreateRegular*
+  nameWithType.vb: Polygon2D.CreateRegular(float2, Single, Integer)
+  fullName.vb: CGRust.Runtime.Polygon2D.CreateRegular(Unity.Mathematics.float2, Single, Integer)
+  name.vb: CreateRegular(float2, Single, Integer)
+references:
+- uid: CGRust.Runtime
+  commentId: N:CGRust.Runtime
+  href: CGRust.html
+  name: CGRust.Runtime
+  nameWithType: CGRust.Runtime
+  fullName: CGRust.Runtime
+  spec.csharp:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Runtime
+    name: Runtime
+    href: CGRust.Runtime.html
+  spec.vb:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Runtime
+    name: Runtime
+    href: CGRust.Runtime.html
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: CGRust.Runtime.IGLTFExportable
+  commentId: T:CGRust.Runtime.IGLTFExportable
+  parent: CGRust.Runtime
+  href: CGRust.Runtime.IGLTFExportable.html
+  name: IGLTFExportable
+  nameWithType: IGLTFExportable
+  fullName: CGRust.Runtime.IGLTFExportable
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CGRust.Runtime.Polygon2D.#ctor*
+  commentId: Overload:CGRust.Runtime.Polygon2D.#ctor
+  href: CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D__ctor_CGRust_Wrapper_CGRustArray_Unity_Mathematics_float2__
+  name: Polygon2D
+  nameWithType: Polygon2D.Polygon2D
+  fullName: CGRust.Runtime.Polygon2D.Polygon2D
+  nameWithType.vb: Polygon2D.New
+  fullName.vb: CGRust.Runtime.Polygon2D.New
+  name.vb: New
+- uid: CGRust.Wrapper.CGRustArray{Unity.Mathematics.float2}
+  commentId: T:CGRust.Wrapper.CGRustArray{Unity.Mathematics.float2}
+  parent: CGRust.Wrapper
+  definition: CGRust.Wrapper.CGRustArray`1
+  href: CGRust.Wrapper.CGRustArray-1.html
+  name: CGRustArray<float2>
+  nameWithType: CGRustArray<float2>
+  fullName: CGRust.Wrapper.CGRustArray<Unity.Mathematics.float2>
+  nameWithType.vb: CGRustArray(Of float2)
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of Unity.Mathematics.float2)
+  name.vb: CGRustArray(Of float2)
+  spec.csharp:
+  - uid: CGRust.Wrapper.CGRustArray`1
+    name: CGRustArray
+    href: CGRust.Wrapper.CGRustArray-1.html
+  - name: <
+  - uid: Unity.Mathematics.float2
+    name: float2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: CGRust.Wrapper.CGRustArray`1
+    name: CGRustArray
+    href: CGRust.Wrapper.CGRustArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Unity.Mathematics.float2
+    name: float2
+    isExternal: true
+  - name: )
+- uid: CGRust.Wrapper.CGRustArray`1
+  commentId: T:CGRust.Wrapper.CGRustArray`1
+  href: CGRust.Wrapper.CGRustArray-1.html
+  name: CGRustArray<T>
+  nameWithType: CGRustArray<T>
+  fullName: CGRust.Wrapper.CGRustArray<T>
+  nameWithType.vb: CGRustArray(Of T)
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T)
+  name.vb: CGRustArray(Of T)
+  spec.csharp:
+  - uid: CGRust.Wrapper.CGRustArray`1
+    name: CGRustArray
+    href: CGRust.Wrapper.CGRustArray-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: CGRust.Wrapper.CGRustArray`1
+    name: CGRustArray
+    href: CGRust.Wrapper.CGRustArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CGRust.Wrapper
+  commentId: N:CGRust.Wrapper
+  href: CGRust.html
+  name: CGRust.Wrapper
+  nameWithType: CGRust.Wrapper
+  fullName: CGRust.Wrapper
+  spec.csharp:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Wrapper
+    name: Wrapper
+    href: CGRust.Wrapper.html
+  spec.vb:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Wrapper
+    name: Wrapper
+    href: CGRust.Wrapper.html
+- uid: CGRust.Runtime.Polygon2D.IsCreated*
+  commentId: Overload:CGRust.Runtime.Polygon2D.IsCreated
+  href: CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D_IsCreated
+  name: IsCreated
+  nameWithType: Polygon2D.IsCreated
+  fullName: CGRust.Runtime.Polygon2D.IsCreated
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CGRust.Runtime.Polygon2D.Dispose*
+  commentId: Overload:CGRust.Runtime.Polygon2D.Dispose
+  href: CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D_Dispose
+  name: Dispose
+  nameWithType: Polygon2D.Dispose
+  fullName: CGRust.Runtime.Polygon2D.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: CGRust.Runtime.Polygon2D.ToMesh*
+  commentId: Overload:CGRust.Runtime.Polygon2D.ToMesh
+  href: CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D_ToMesh_CGRust_Runtime_CardinalDirection_System_String_
+  name: ToMesh
+  nameWithType: Polygon2D.ToMesh
+  fullName: CGRust.Runtime.Polygon2D.ToMesh
+- uid: CGRust.Runtime.CardinalDirection
+  commentId: T:CGRust.Runtime.CardinalDirection
+  parent: CGRust.Runtime
+  href: CGRust.Runtime.CardinalDirection.html
+  name: CardinalDirection
+  nameWithType: CardinalDirection
+  fullName: CGRust.Runtime.CardinalDirection
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Mesh
+  commentId: T:UnityEngine.Mesh
+  parent: UnityEngine
+  isExternal: true
+  name: Mesh
+  nameWithType: Mesh
+  fullName: UnityEngine.Mesh
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: CGRust.Runtime.Polygon2D.CreateRegular*
+  commentId: Overload:CGRust.Runtime.Polygon2D.CreateRegular
+  href: CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D_CreateRegular_Unity_Mathematics_float2_System_Single_System_Int32_
+  name: CreateRegular
+  nameWithType: Polygon2D.CreateRegular
+  fullName: CGRust.Runtime.Polygon2D.CreateRegular
+- uid: Unity.Mathematics.float2
+  commentId: T:Unity.Mathematics.float2
+  parent: Unity.Mathematics
+  isExternal: true
+  name: float2
+  nameWithType: float2
+  fullName: Unity.Mathematics.float2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CGRust.Runtime.Polygon2D
+  commentId: T:CGRust.Runtime.Polygon2D
+  parent: CGRust.Runtime
+  href: CGRust.Runtime.Polygon2D.html
+  name: Polygon2D
+  nameWithType: Polygon2D
+  fullName: CGRust.Runtime.Polygon2D
+- uid: Unity.Mathematics
+  commentId: N:Unity.Mathematics
+  isExternal: true
+  name: Unity.Mathematics
+  nameWithType: Unity.Mathematics
+  fullName: Unity.Mathematics
+  spec.csharp:
+  - uid: Unity
+    name: Unity
+    isExternal: true
+  - name: .
+  - uid: Unity.Mathematics
+    name: Mathematics
+    isExternal: true
+  spec.vb:
+  - uid: Unity
+    name: Unity
+    isExternal: true
+  - name: .
+  - uid: Unity.Mathematics
+    name: Mathematics
+    isExternal: true

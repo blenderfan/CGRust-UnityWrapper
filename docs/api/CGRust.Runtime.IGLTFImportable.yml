@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: CGRust.Runtime.IGLTFImportable
+  commentId: T:CGRust.Runtime.IGLTFImportable
+  id: IGLTFImportable
+  parent: CGRust.Runtime
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IGLTFImportable
+  nameWithType: IGLTFImportable
+  fullName: CGRust.Runtime.IGLTFImportable
+  type: Interface
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Runtime/Structures/Interfaces/IGLTFImportable.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: IGLTFImportable
+    path: ../Assets/CGRust/Scripts/Runtime/Structures/Interfaces/IGLTFImportable.cs
+    startLine: 2
+  assemblies:
+  - CGRust.Runtime
+  namespace: CGRust.Runtime
+  syntax:
+    content: public interface IGLTFImportable
+    content.vb: Public Interface IGLTFImportable
+references:
+- uid: CGRust.Runtime
+  commentId: N:CGRust.Runtime
+  href: CGRust.html
+  name: CGRust.Runtime
+  nameWithType: CGRust.Runtime
+  fullName: CGRust.Runtime
+  spec.csharp:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Runtime
+    name: Runtime
+    href: CGRust.Runtime.html
+  spec.vb:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Runtime
+    name: Runtime
+    href: CGRust.Runtime.html

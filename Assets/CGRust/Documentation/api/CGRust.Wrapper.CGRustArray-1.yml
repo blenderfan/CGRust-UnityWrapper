@@ -1,0 +1,494 @@
+### YamlMime:ManagedReference
+items:
+- uid: CGRust.Wrapper.CGRustArray`1
+  commentId: T:CGRust.Wrapper.CGRustArray`1
+  id: CGRustArray`1
+  parent: CGRust.Wrapper
+  children:
+  - CGRust.Wrapper.CGRustArray`1.#ctor(Unity.Collections.LowLevel.Unsafe.UnsafeList{`0})
+  - CGRust.Wrapper.CGRustArray`1.Dispose
+  - CGRust.Wrapper.CGRustArray`1.data
+  langs:
+  - csharp
+  - vb
+  name: CGRustArray<T>
+  nameWithType: CGRustArray<T>
+  fullName: CGRust.Wrapper.CGRustArray<T>
+  type: Struct
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Wrapper/Util/CGRustArray.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: CGRustArray
+    path: ../Scripts/Wrapper/Util/CGRustArray.cs
+    startLine: 12
+  assemblies:
+  - CGRust.Wrapper
+  namespace: CGRust.Wrapper
+  summary: >-
+    Helper class for handling arrays allocated in Rust. The Container can be used in
+
+    Burst Jobs! However, disposing has to be done outside the job.
+  example: []
+  syntax:
+    content: 'public struct CGRustArray<T> where T : unmanaged'
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Structure CGRustArray(Of T As Structure)
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: CGRustArray(Of T)
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T)
+  name.vb: CGRustArray(Of T)
+- uid: CGRust.Wrapper.CGRustArray`1.data
+  commentId: F:CGRust.Wrapper.CGRustArray`1.data
+  id: data
+  parent: CGRust.Wrapper.CGRustArray`1
+  langs:
+  - csharp
+  - vb
+  name: data
+  nameWithType: CGRustArray<T>.data
+  fullName: CGRust.Wrapper.CGRustArray<T>.data
+  type: Field
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Wrapper/Util/CGRustArray.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: data
+    path: ../Scripts/Wrapper/Util/CGRustArray.cs
+    startLine: 15
+  assemblies:
+  - CGRust.Wrapper
+  namespace: CGRust.Wrapper
+  syntax:
+    content: public UnsafeList<T> data
+    return:
+      type: Unity.Collections.LowLevel.Unsafe.UnsafeList{{T}}
+    content.vb: Public data As UnsafeList(Of T)
+  nameWithType.vb: CGRustArray(Of T).data
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T).data
+- uid: CGRust.Wrapper.CGRustArray`1.#ctor(Unity.Collections.LowLevel.Unsafe.UnsafeList{`0})
+  commentId: M:CGRust.Wrapper.CGRustArray`1.#ctor(Unity.Collections.LowLevel.Unsafe.UnsafeList{`0})
+  id: '#ctor(Unity.Collections.LowLevel.Unsafe.UnsafeList{`0})'
+  parent: CGRust.Wrapper.CGRustArray`1
+  langs:
+  - csharp
+  - vb
+  name: CGRustArray(UnsafeList<T>)
+  nameWithType: CGRustArray<T>.CGRustArray(UnsafeList<T>)
+  fullName: CGRust.Wrapper.CGRustArray<T>.CGRustArray(Unity.Collections.LowLevel.Unsafe.UnsafeList<T>)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Wrapper/Util/CGRustArray.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: .ctor
+    path: ../Scripts/Wrapper/Util/CGRustArray.cs
+    startLine: 17
+  assemblies:
+  - CGRust.Wrapper
+  namespace: CGRust.Wrapper
+  syntax:
+    content: public CGRustArray(UnsafeList<T> list)
+    parameters:
+    - id: list
+      type: Unity.Collections.LowLevel.Unsafe.UnsafeList{{T}}
+    content.vb: Public Sub New(list As UnsafeList(Of T))
+  overload: CGRust.Wrapper.CGRustArray`1.#ctor*
+  nameWithType.vb: CGRustArray(Of T).New(UnsafeList(Of T))
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T).New(Unity.Collections.LowLevel.Unsafe.UnsafeList(Of T))
+  name.vb: New(UnsafeList(Of T))
+- uid: CGRust.Wrapper.CGRustArray`1.Dispose
+  commentId: M:CGRust.Wrapper.CGRustArray`1.Dispose
+  id: Dispose
+  parent: CGRust.Wrapper.CGRustArray`1
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: CGRustArray<T>.Dispose()
+  fullName: CGRust.Wrapper.CGRustArray<T>.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Wrapper/Util/CGRustArray.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: Dispose
+    path: ../Scripts/Wrapper/Util/CGRustArray.cs
+    startLine: 22
+  assemblies:
+  - CGRust.Wrapper
+  namespace: CGRust.Wrapper
+  syntax:
+    content: >-
+      [BurstDiscard]
+
+      public void Dispose()
+    content.vb: >-
+      <BurstDiscard>
+
+      Public Sub Dispose()
+  overload: CGRust.Wrapper.CGRustArray`1.Dispose*
+  attributes:
+  - type: Unity.Burst.BurstDiscardAttribute
+    ctor: Unity.Burst.BurstDiscardAttribute.#ctor
+    arguments: []
+  nameWithType.vb: CGRustArray(Of T).Dispose()
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T).Dispose()
+references:
+- uid: CGRust.Wrapper
+  commentId: N:CGRust.Wrapper
+  href: CGRust.html
+  name: CGRust.Wrapper
+  nameWithType: CGRust.Wrapper
+  fullName: CGRust.Wrapper
+  spec.csharp:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Wrapper
+    name: Wrapper
+    href: CGRust.Wrapper.html
+  spec.vb:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Wrapper
+    name: Wrapper
+    href: CGRust.Wrapper.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Unity.Collections.LowLevel.Unsafe.UnsafeList{{T}}
+  commentId: T:Unity.Collections.LowLevel.Unsafe.UnsafeList{`0}
+  parent: Unity.Collections.LowLevel.Unsafe
+  definition: Unity.Collections.LowLevel.Unsafe.UnsafeList`1
+  name: UnsafeList<T>
+  nameWithType: UnsafeList<T>
+  fullName: Unity.Collections.LowLevel.Unsafe.UnsafeList<T>
+  nameWithType.vb: UnsafeList(Of T)
+  fullName.vb: Unity.Collections.LowLevel.Unsafe.UnsafeList(Of T)
+  name.vb: UnsafeList(Of T)
+  spec.csharp:
+  - uid: Unity.Collections.LowLevel.Unsafe.UnsafeList`1
+    name: UnsafeList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Unity.Collections.LowLevel.Unsafe.UnsafeList`1
+    name: UnsafeList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Unity.Collections.LowLevel.Unsafe.UnsafeList`1
+  commentId: T:Unity.Collections.LowLevel.Unsafe.UnsafeList`1
+  isExternal: true
+  name: UnsafeList<T>
+  nameWithType: UnsafeList<T>
+  fullName: Unity.Collections.LowLevel.Unsafe.UnsafeList<T>
+  nameWithType.vb: UnsafeList(Of T)
+  fullName.vb: Unity.Collections.LowLevel.Unsafe.UnsafeList(Of T)
+  name.vb: UnsafeList(Of T)
+  spec.csharp:
+  - uid: Unity.Collections.LowLevel.Unsafe.UnsafeList`1
+    name: UnsafeList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Unity.Collections.LowLevel.Unsafe.UnsafeList`1
+    name: UnsafeList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Unity.Collections.LowLevel.Unsafe
+  commentId: N:Unity.Collections.LowLevel.Unsafe
+  isExternal: true
+  name: Unity.Collections.LowLevel.Unsafe
+  nameWithType: Unity.Collections.LowLevel.Unsafe
+  fullName: Unity.Collections.LowLevel.Unsafe
+  spec.csharp:
+  - uid: Unity
+    name: Unity
+    isExternal: true
+  - name: .
+  - uid: Unity.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: Unity.Collections.LowLevel
+    name: LowLevel
+    isExternal: true
+  - name: .
+  - uid: Unity.Collections.LowLevel.Unsafe
+    name: Unsafe
+    isExternal: true
+  spec.vb:
+  - uid: Unity
+    name: Unity
+    isExternal: true
+  - name: .
+  - uid: Unity.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: Unity.Collections.LowLevel
+    name: LowLevel
+    isExternal: true
+  - name: .
+  - uid: Unity.Collections.LowLevel.Unsafe
+    name: Unsafe
+    isExternal: true
+- uid: CGRust.Wrapper.CGRustArray`1.#ctor*
+  commentId: Overload:CGRust.Wrapper.CGRustArray`1.#ctor
+  href: CGRust.Wrapper.CGRustArray-1.html#CGRust_Wrapper_CGRustArray_1__ctor_Unity_Collections_LowLevel_Unsafe_UnsafeList__0__
+  name: CGRustArray
+  nameWithType: CGRustArray<T>.CGRustArray
+  fullName: CGRust.Wrapper.CGRustArray<T>.CGRustArray
+  nameWithType.vb: CGRustArray(Of T).New
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T).New
+  name.vb: New
+- uid: CGRust.Wrapper.CGRustArray`1.Dispose*
+  commentId: Overload:CGRust.Wrapper.CGRustArray`1.Dispose
+  href: CGRust.Wrapper.CGRustArray-1.html#CGRust_Wrapper_CGRustArray_1_Dispose
+  name: Dispose
+  nameWithType: CGRustArray<T>.Dispose
+  fullName: CGRust.Wrapper.CGRustArray<T>.Dispose
+  nameWithType.vb: CGRustArray(Of T).Dispose
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T).Dispose

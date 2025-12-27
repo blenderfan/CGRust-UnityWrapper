@@ -1,0 +1,415 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: CGRust.Runtime
+  name: CGRust.Runtime
+  href: api/CGRust.Runtime.html
+  commentId: N:CGRust.Runtime
+  fullName: CGRust.Runtime
+  nameWithType: CGRust.Runtime
+- uid: CGRust.Runtime.CardinalDirection
+  name: CardinalDirection
+  href: api/CGRust.Runtime.CardinalDirection.html
+  commentId: T:CGRust.Runtime.CardinalDirection
+  fullName: CGRust.Runtime.CardinalDirection
+  nameWithType: CardinalDirection
+- uid: CGRust.Runtime.CardinalDirection.X
+  name: X
+  href: api/CGRust.Runtime.CardinalDirection.html#CGRust_Runtime_CardinalDirection_X
+  commentId: F:CGRust.Runtime.CardinalDirection.X
+  fullName: CGRust.Runtime.CardinalDirection.X
+  nameWithType: CardinalDirection.X
+- uid: CGRust.Runtime.CardinalDirection.Y
+  name: Y
+  href: api/CGRust.Runtime.CardinalDirection.html#CGRust_Runtime_CardinalDirection_Y
+  commentId: F:CGRust.Runtime.CardinalDirection.Y
+  fullName: CGRust.Runtime.CardinalDirection.Y
+  nameWithType: CardinalDirection.Y
+- uid: CGRust.Runtime.CardinalDirection.Z
+  name: Z
+  href: api/CGRust.Runtime.CardinalDirection.html#CGRust_Runtime_CardinalDirection_Z
+  commentId: F:CGRust.Runtime.CardinalDirection.Z
+  fullName: CGRust.Runtime.CardinalDirection.Z
+  nameWithType: CardinalDirection.Z
+- uid: CGRust.Runtime.CardinalDirectionExtensions
+  name: CardinalDirectionExtensions
+  href: api/CGRust.Runtime.CardinalDirectionExtensions.html
+  commentId: T:CGRust.Runtime.CardinalDirectionExtensions
+  fullName: CGRust.Runtime.CardinalDirectionExtensions
+  nameWithType: CardinalDirectionExtensions
+- uid: CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+  name: GetDirectionIndex(CardinalDirection)
+  href: api/CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetDirectionIndex_CGRust_Runtime_CardinalDirection_
+  commentId: M:CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+  fullName: CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+  nameWithType: CardinalDirectionExtensions.GetDirectionIndex(CardinalDirection)
+- uid: CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex*
+  name: GetDirectionIndex
+  href: api/CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetDirectionIndex_
+  commentId: Overload:CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex
+  isSpec: "True"
+  fullName: CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex
+  nameWithType: CardinalDirectionExtensions.GetDirectionIndex
+- uid: CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+  name: GetOrthogonalIndices(CardinalDirection)
+  href: api/CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetOrthogonalIndices_CGRust_Runtime_CardinalDirection_
+  commentId: M:CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+  fullName: CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+  nameWithType: CardinalDirectionExtensions.GetOrthogonalIndices(CardinalDirection)
+- uid: CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices*
+  name: GetOrthogonalIndices
+  href: api/CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetOrthogonalIndices_
+  commentId: Overload:CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices
+  isSpec: "True"
+  fullName: CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices
+  nameWithType: CardinalDirectionExtensions.GetOrthogonalIndices
+- uid: CGRust.Runtime.IGLTFExportable
+  name: IGLTFExportable
+  href: api/CGRust.Runtime.IGLTFExportable.html
+  commentId: T:CGRust.Runtime.IGLTFExportable
+  fullName: CGRust.Runtime.IGLTFExportable
+  nameWithType: IGLTFExportable
+- uid: CGRust.Runtime.IGLTFImportable
+  name: IGLTFImportable
+  href: api/CGRust.Runtime.IGLTFImportable.html
+  commentId: T:CGRust.Runtime.IGLTFImportable
+  fullName: CGRust.Runtime.IGLTFImportable
+  nameWithType: IGLTFImportable
+- uid: CGRust.Runtime.MeshUtil
+  name: MeshUtil
+  href: api/CGRust.Runtime.MeshUtil.html
+  commentId: T:CGRust.Runtime.MeshUtil
+  fullName: CGRust.Runtime.MeshUtil
+  nameWithType: MeshUtil
+- uid: CGRust.Runtime.MeshUtil.ToHardEdgesMesh(UnityEngine.Mesh,System.String)
+  name: ToHardEdgesMesh(Mesh, string)
+  href: api/CGRust.Runtime.MeshUtil.html#CGRust_Runtime_MeshUtil_ToHardEdgesMesh_UnityEngine_Mesh_System_String_
+  commentId: M:CGRust.Runtime.MeshUtil.ToHardEdgesMesh(UnityEngine.Mesh,System.String)
+  name.vb: ToHardEdgesMesh(Mesh, String)
+  fullName: CGRust.Runtime.MeshUtil.ToHardEdgesMesh(UnityEngine.Mesh, string)
+  fullName.vb: CGRust.Runtime.MeshUtil.ToHardEdgesMesh(UnityEngine.Mesh, String)
+  nameWithType: MeshUtil.ToHardEdgesMesh(Mesh, string)
+  nameWithType.vb: MeshUtil.ToHardEdgesMesh(Mesh, String)
+- uid: CGRust.Runtime.MeshUtil.ToHardEdgesMesh*
+  name: ToHardEdgesMesh
+  href: api/CGRust.Runtime.MeshUtil.html#CGRust_Runtime_MeshUtil_ToHardEdgesMesh_
+  commentId: Overload:CGRust.Runtime.MeshUtil.ToHardEdgesMesh
+  isSpec: "True"
+  fullName: CGRust.Runtime.MeshUtil.ToHardEdgesMesh
+  nameWithType: MeshUtil.ToHardEdgesMesh
+- uid: CGRust.Runtime.MeshVisualizationUtil
+  name: MeshVisualizationUtil
+  href: api/CGRust.Runtime.MeshVisualizationUtil.html
+  commentId: T:CGRust.Runtime.MeshVisualizationUtil
+  fullName: CGRust.Runtime.MeshVisualizationUtil
+  nameWithType: MeshVisualizationUtil
+- uid: CGRust.Runtime.MeshVisualizationUtil.AddTriangleGradientColors(UnityEngine.Mesh@,UnityEngine.Gradient)
+  name: AddTriangleGradientColors(ref Mesh, Gradient)
+  href: api/CGRust.Runtime.MeshVisualizationUtil.html#CGRust_Runtime_MeshVisualizationUtil_AddTriangleGradientColors_UnityEngine_Mesh__UnityEngine_Gradient_
+  commentId: M:CGRust.Runtime.MeshVisualizationUtil.AddTriangleGradientColors(UnityEngine.Mesh@,UnityEngine.Gradient)
+  name.vb: AddTriangleGradientColors(Mesh, Gradient)
+  fullName: CGRust.Runtime.MeshVisualizationUtil.AddTriangleGradientColors(ref UnityEngine.Mesh, UnityEngine.Gradient)
+  fullName.vb: CGRust.Runtime.MeshVisualizationUtil.AddTriangleGradientColors(UnityEngine.Mesh, UnityEngine.Gradient)
+  nameWithType: MeshVisualizationUtil.AddTriangleGradientColors(ref Mesh, Gradient)
+  nameWithType.vb: MeshVisualizationUtil.AddTriangleGradientColors(Mesh, Gradient)
+- uid: CGRust.Runtime.MeshVisualizationUtil.AddTriangleGradientColors*
+  name: AddTriangleGradientColors
+  href: api/CGRust.Runtime.MeshVisualizationUtil.html#CGRust_Runtime_MeshVisualizationUtil_AddTriangleGradientColors_
+  commentId: Overload:CGRust.Runtime.MeshVisualizationUtil.AddTriangleGradientColors
+  isSpec: "True"
+  fullName: CGRust.Runtime.MeshVisualizationUtil.AddTriangleGradientColors
+  nameWithType: MeshVisualizationUtil.AddTriangleGradientColors
+- uid: CGRust.Runtime.Polygon2D
+  name: Polygon2D
+  href: api/CGRust.Runtime.Polygon2D.html
+  commentId: T:CGRust.Runtime.Polygon2D
+  fullName: CGRust.Runtime.Polygon2D
+  nameWithType: Polygon2D
+- uid: CGRust.Runtime.Polygon2D.#ctor(CGRust.Wrapper.CGRustArray{Unity.Mathematics.float2})
+  name: Polygon2D(CGRustArray<float2>)
+  href: api/CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D__ctor_CGRust_Wrapper_CGRustArray_Unity_Mathematics_float2__
+  commentId: M:CGRust.Runtime.Polygon2D.#ctor(CGRust.Wrapper.CGRustArray{Unity.Mathematics.float2})
+  name.vb: New(CGRustArray(Of float2))
+  fullName: CGRust.Runtime.Polygon2D.Polygon2D(CGRust.Wrapper.CGRustArray<Unity.Mathematics.float2>)
+  fullName.vb: CGRust.Runtime.Polygon2D.New(CGRust.Wrapper.CGRustArray(Of Unity.Mathematics.float2))
+  nameWithType: Polygon2D.Polygon2D(CGRustArray<float2>)
+  nameWithType.vb: Polygon2D.New(CGRustArray(Of float2))
+- uid: CGRust.Runtime.Polygon2D.#ctor*
+  name: Polygon2D
+  href: api/CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D__ctor_
+  commentId: Overload:CGRust.Runtime.Polygon2D.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CGRust.Runtime.Polygon2D.Polygon2D
+  fullName.vb: CGRust.Runtime.Polygon2D.New
+  nameWithType: Polygon2D.Polygon2D
+  nameWithType.vb: Polygon2D.New
+- uid: CGRust.Runtime.Polygon2D.CreateRegular(Unity.Mathematics.float2,System.Single,System.Int32)
+  name: CreateRegular(float2, float, int)
+  href: api/CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D_CreateRegular_Unity_Mathematics_float2_System_Single_System_Int32_
+  commentId: M:CGRust.Runtime.Polygon2D.CreateRegular(Unity.Mathematics.float2,System.Single,System.Int32)
+  name.vb: CreateRegular(float2, Single, Integer)
+  fullName: CGRust.Runtime.Polygon2D.CreateRegular(Unity.Mathematics.float2, float, int)
+  fullName.vb: CGRust.Runtime.Polygon2D.CreateRegular(Unity.Mathematics.float2, Single, Integer)
+  nameWithType: Polygon2D.CreateRegular(float2, float, int)
+  nameWithType.vb: Polygon2D.CreateRegular(float2, Single, Integer)
+- uid: CGRust.Runtime.Polygon2D.CreateRegular*
+  name: CreateRegular
+  href: api/CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D_CreateRegular_
+  commentId: Overload:CGRust.Runtime.Polygon2D.CreateRegular
+  isSpec: "True"
+  fullName: CGRust.Runtime.Polygon2D.CreateRegular
+  nameWithType: Polygon2D.CreateRegular
+- uid: CGRust.Runtime.Polygon2D.Dispose
+  name: Dispose()
+  href: api/CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D_Dispose
+  commentId: M:CGRust.Runtime.Polygon2D.Dispose
+  fullName: CGRust.Runtime.Polygon2D.Dispose()
+  nameWithType: Polygon2D.Dispose()
+- uid: CGRust.Runtime.Polygon2D.Dispose*
+  name: Dispose
+  href: api/CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D_Dispose_
+  commentId: Overload:CGRust.Runtime.Polygon2D.Dispose
+  isSpec: "True"
+  fullName: CGRust.Runtime.Polygon2D.Dispose
+  nameWithType: Polygon2D.Dispose
+- uid: CGRust.Runtime.Polygon2D.IsCreated
+  name: IsCreated
+  href: api/CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D_IsCreated
+  commentId: P:CGRust.Runtime.Polygon2D.IsCreated
+  fullName: CGRust.Runtime.Polygon2D.IsCreated
+  nameWithType: Polygon2D.IsCreated
+- uid: CGRust.Runtime.Polygon2D.IsCreated*
+  name: IsCreated
+  href: api/CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D_IsCreated_
+  commentId: Overload:CGRust.Runtime.Polygon2D.IsCreated
+  isSpec: "True"
+  fullName: CGRust.Runtime.Polygon2D.IsCreated
+  nameWithType: Polygon2D.IsCreated
+- uid: CGRust.Runtime.Polygon2D.ToMesh(CGRust.Runtime.CardinalDirection,System.String)
+  name: ToMesh(CardinalDirection, string)
+  href: api/CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D_ToMesh_CGRust_Runtime_CardinalDirection_System_String_
+  commentId: M:CGRust.Runtime.Polygon2D.ToMesh(CGRust.Runtime.CardinalDirection,System.String)
+  name.vb: ToMesh(CardinalDirection, String)
+  fullName: CGRust.Runtime.Polygon2D.ToMesh(CGRust.Runtime.CardinalDirection, string)
+  fullName.vb: CGRust.Runtime.Polygon2D.ToMesh(CGRust.Runtime.CardinalDirection, String)
+  nameWithType: Polygon2D.ToMesh(CardinalDirection, string)
+  nameWithType.vb: Polygon2D.ToMesh(CardinalDirection, String)
+- uid: CGRust.Runtime.Polygon2D.ToMesh*
+  name: ToMesh
+  href: api/CGRust.Runtime.Polygon2D.html#CGRust_Runtime_Polygon2D_ToMesh_
+  commentId: Overload:CGRust.Runtime.Polygon2D.ToMesh
+  isSpec: "True"
+  fullName: CGRust.Runtime.Polygon2D.ToMesh
+  nameWithType: Polygon2D.ToMesh
+- uid: CGRust.Wrapper
+  name: CGRust.Wrapper
+  href: api/CGRust.Wrapper.html
+  commentId: N:CGRust.Wrapper
+  fullName: CGRust.Wrapper
+  nameWithType: CGRust.Wrapper
+- uid: CGRust.Wrapper.CGRustArray`1
+  name: CGRustArray<T>
+  href: api/CGRust.Wrapper.CGRustArray-1.html
+  commentId: T:CGRust.Wrapper.CGRustArray`1
+  name.vb: CGRustArray(Of T)
+  fullName: CGRust.Wrapper.CGRustArray<T>
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T)
+  nameWithType: CGRustArray<T>
+  nameWithType.vb: CGRustArray(Of T)
+- uid: CGRust.Wrapper.CGRustArray`1.#ctor(Unity.Collections.LowLevel.Unsafe.UnsafeList{`0})
+  name: CGRustArray(UnsafeList<T>)
+  href: api/CGRust.Wrapper.CGRustArray-1.html#CGRust_Wrapper_CGRustArray_1__ctor_Unity_Collections_LowLevel_Unsafe_UnsafeList__0__
+  commentId: M:CGRust.Wrapper.CGRustArray`1.#ctor(Unity.Collections.LowLevel.Unsafe.UnsafeList{`0})
+  name.vb: New(UnsafeList(Of T))
+  fullName: CGRust.Wrapper.CGRustArray<T>.CGRustArray(Unity.Collections.LowLevel.Unsafe.UnsafeList<T>)
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T).New(Unity.Collections.LowLevel.Unsafe.UnsafeList(Of T))
+  nameWithType: CGRustArray<T>.CGRustArray(UnsafeList<T>)
+  nameWithType.vb: CGRustArray(Of T).New(UnsafeList(Of T))
+- uid: CGRust.Wrapper.CGRustArray`1.#ctor*
+  name: CGRustArray
+  href: api/CGRust.Wrapper.CGRustArray-1.html#CGRust_Wrapper_CGRustArray_1__ctor_
+  commentId: Overload:CGRust.Wrapper.CGRustArray`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CGRust.Wrapper.CGRustArray<T>.CGRustArray
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T).New
+  nameWithType: CGRustArray<T>.CGRustArray
+  nameWithType.vb: CGRustArray(Of T).New
+- uid: CGRust.Wrapper.CGRustArray`1.Dispose
+  name: Dispose()
+  href: api/CGRust.Wrapper.CGRustArray-1.html#CGRust_Wrapper_CGRustArray_1_Dispose
+  commentId: M:CGRust.Wrapper.CGRustArray`1.Dispose
+  fullName: CGRust.Wrapper.CGRustArray<T>.Dispose()
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T).Dispose()
+  nameWithType: CGRustArray<T>.Dispose()
+  nameWithType.vb: CGRustArray(Of T).Dispose()
+- uid: CGRust.Wrapper.CGRustArray`1.Dispose*
+  name: Dispose
+  href: api/CGRust.Wrapper.CGRustArray-1.html#CGRust_Wrapper_CGRustArray_1_Dispose_
+  commentId: Overload:CGRust.Wrapper.CGRustArray`1.Dispose
+  isSpec: "True"
+  fullName: CGRust.Wrapper.CGRustArray<T>.Dispose
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T).Dispose
+  nameWithType: CGRustArray<T>.Dispose
+  nameWithType.vb: CGRustArray(Of T).Dispose
+- uid: CGRust.Wrapper.CGRustArray`1.data
+  name: data
+  href: api/CGRust.Wrapper.CGRustArray-1.html#CGRust_Wrapper_CGRustArray_1_data
+  commentId: F:CGRust.Wrapper.CGRustArray`1.data
+  fullName: CGRust.Wrapper.CGRustArray<T>.data
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T).data
+  nameWithType: CGRustArray<T>.data
+  nameWithType.vb: CGRustArray(Of T).data
+- uid: CGRust.Wrapper.FreeMemory
+  name: FreeMemory
+  href: api/CGRust.Wrapper.FreeMemory.html
+  commentId: T:CGRust.Wrapper.FreeMemory
+  fullName: CGRust.Wrapper.FreeMemory
+  nameWithType: FreeMemory
+- uid: CGRust.Wrapper.FreeMemory.FreeArray*
+  name: FreeArray
+  href: api/CGRust.Wrapper.FreeMemory.html#CGRust_Wrapper_FreeMemory_FreeArray_
+  commentId: Overload:CGRust.Wrapper.FreeMemory.FreeArray
+  isSpec: "True"
+  fullName: CGRust.Wrapper.FreeMemory.FreeArray
+  nameWithType: FreeMemory.FreeArray
+- uid: CGRust.Wrapper.FreeMemory.FreeArray``1(CGRust.Wrapper.PArray{``0}@)
+  name: FreeArray<T>(ref PArray<T>)
+  href: api/CGRust.Wrapper.FreeMemory.html#CGRust_Wrapper_FreeMemory_FreeArray__1_CGRust_Wrapper_PArray___0___
+  commentId: M:CGRust.Wrapper.FreeMemory.FreeArray``1(CGRust.Wrapper.PArray{``0}@)
+  name.vb: FreeArray(Of T)(PArray(Of T))
+  fullName: CGRust.Wrapper.FreeMemory.FreeArray<T>(ref CGRust.Wrapper.PArray<T>)
+  fullName.vb: CGRust.Wrapper.FreeMemory.FreeArray(Of T)(CGRust.Wrapper.PArray(Of T))
+  nameWithType: FreeMemory.FreeArray<T>(ref PArray<T>)
+  nameWithType.vb: FreeMemory.FreeArray(Of T)(PArray(Of T))
+- uid: CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2(CGRust.Wrapper.PArray{Unity.Mathematics.float2}@)
+  name: cg_rust_free_array_float2(ref PArray<float2>)
+  href: api/CGRust.Wrapper.FreeMemory.html#CGRust_Wrapper_FreeMemory_cg_rust_free_array_float2_CGRust_Wrapper_PArray_Unity_Mathematics_float2___
+  commentId: M:CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2(CGRust.Wrapper.PArray{Unity.Mathematics.float2}@)
+  name.vb: cg_rust_free_array_float2(PArray(Of float2))
+  fullName: CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2(ref CGRust.Wrapper.PArray<Unity.Mathematics.float2>)
+  fullName.vb: CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2(CGRust.Wrapper.PArray(Of Unity.Mathematics.float2))
+  nameWithType: FreeMemory.cg_rust_free_array_float2(ref PArray<float2>)
+  nameWithType.vb: FreeMemory.cg_rust_free_array_float2(PArray(Of float2))
+- uid: CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2*
+  name: cg_rust_free_array_float2
+  href: api/CGRust.Wrapper.FreeMemory.html#CGRust_Wrapper_FreeMemory_cg_rust_free_array_float2_
+  commentId: Overload:CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2
+  fullName: CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2
+  nameWithType: FreeMemory.cg_rust_free_array_float2
+- uid: CGRust.Wrapper.FreeMemory.cg_rust_free_array_int(CGRust.Wrapper.PArray{System.Int32}@)
+  name: cg_rust_free_array_int(ref PArray<int>)
+  href: api/CGRust.Wrapper.FreeMemory.html#CGRust_Wrapper_FreeMemory_cg_rust_free_array_int_CGRust_Wrapper_PArray_System_Int32___
+  commentId: M:CGRust.Wrapper.FreeMemory.cg_rust_free_array_int(CGRust.Wrapper.PArray{System.Int32}@)
+  name.vb: cg_rust_free_array_int(PArray(Of Integer))
+  fullName: CGRust.Wrapper.FreeMemory.cg_rust_free_array_int(ref CGRust.Wrapper.PArray<int>)
+  fullName.vb: CGRust.Wrapper.FreeMemory.cg_rust_free_array_int(CGRust.Wrapper.PArray(Of Integer))
+  nameWithType: FreeMemory.cg_rust_free_array_int(ref PArray<int>)
+  nameWithType.vb: FreeMemory.cg_rust_free_array_int(PArray(Of Integer))
+- uid: CGRust.Wrapper.FreeMemory.cg_rust_free_array_int*
+  name: cg_rust_free_array_int
+  href: api/CGRust.Wrapper.FreeMemory.html#CGRust_Wrapper_FreeMemory_cg_rust_free_array_int_
+  commentId: Overload:CGRust.Wrapper.FreeMemory.cg_rust_free_array_int
+  fullName: CGRust.Wrapper.FreeMemory.cg_rust_free_array_int
+  nameWithType: FreeMemory.cg_rust_free_array_int
+- uid: CGRust.Wrapper.FreeMemory.cg_rust_free_array_long(CGRust.Wrapper.PArray{System.Int64}@)
+  name: cg_rust_free_array_long(ref PArray<long>)
+  href: api/CGRust.Wrapper.FreeMemory.html#CGRust_Wrapper_FreeMemory_cg_rust_free_array_long_CGRust_Wrapper_PArray_System_Int64___
+  commentId: M:CGRust.Wrapper.FreeMemory.cg_rust_free_array_long(CGRust.Wrapper.PArray{System.Int64}@)
+  name.vb: cg_rust_free_array_long(PArray(Of Long))
+  fullName: CGRust.Wrapper.FreeMemory.cg_rust_free_array_long(ref CGRust.Wrapper.PArray<long>)
+  fullName.vb: CGRust.Wrapper.FreeMemory.cg_rust_free_array_long(CGRust.Wrapper.PArray(Of Long))
+  nameWithType: FreeMemory.cg_rust_free_array_long(ref PArray<long>)
+  nameWithType.vb: FreeMemory.cg_rust_free_array_long(PArray(Of Long))
+- uid: CGRust.Wrapper.FreeMemory.cg_rust_free_array_long*
+  name: cg_rust_free_array_long
+  href: api/CGRust.Wrapper.FreeMemory.html#CGRust_Wrapper_FreeMemory_cg_rust_free_array_long_
+  commentId: Overload:CGRust.Wrapper.FreeMemory.cg_rust_free_array_long
+  fullName: CGRust.Wrapper.FreeMemory.cg_rust_free_array_long
+  nameWithType: FreeMemory.cg_rust_free_array_long
+- uid: CGRust.Wrapper.PArray`1
+  name: PArray<T>
+  href: api/CGRust.Wrapper.PArray-1.html
+  commentId: T:CGRust.Wrapper.PArray`1
+  name.vb: PArray(Of T)
+  fullName: CGRust.Wrapper.PArray<T>
+  fullName.vb: CGRust.Wrapper.PArray(Of T)
+  nameWithType: PArray<T>
+  nameWithType.vb: PArray(Of T)
+- uid: CGRust.Wrapper.PArray`1.data
+  name: data
+  href: api/CGRust.Wrapper.PArray-1.html#CGRust_Wrapper_PArray_1_data
+  commentId: F:CGRust.Wrapper.PArray`1.data
+  fullName: CGRust.Wrapper.PArray<T>.data
+  fullName.vb: CGRust.Wrapper.PArray(Of T).data
+  nameWithType: PArray<T>.data
+  nameWithType.vb: PArray(Of T).data
+- uid: CGRust.Wrapper.PArray`1.length
+  name: length
+  href: api/CGRust.Wrapper.PArray-1.html#CGRust_Wrapper_PArray_1_length
+  commentId: F:CGRust.Wrapper.PArray`1.length
+  fullName: CGRust.Wrapper.PArray<T>.length
+  fullName.vb: CGRust.Wrapper.PArray(Of T).length
+  nameWithType: PArray<T>.length
+  nameWithType.vb: PArray(Of T).length
+- uid: CGRust.Wrapper.PolygonMethods
+  name: PolygonMethods
+  href: api/CGRust.Wrapper.PolygonMethods.html
+  commentId: T:CGRust.Wrapper.PolygonMethods
+  fullName: CGRust.Wrapper.PolygonMethods
+  nameWithType: PolygonMethods
+- uid: CGRust.Wrapper.PolygonMethods.CreateRegularPolygon(Unity.Mathematics.float2,System.Single,System.Int32)
+  name: CreateRegularPolygon(float2, float, int)
+  href: api/CGRust.Wrapper.PolygonMethods.html#CGRust_Wrapper_PolygonMethods_CreateRegularPolygon_Unity_Mathematics_float2_System_Single_System_Int32_
+  commentId: M:CGRust.Wrapper.PolygonMethods.CreateRegularPolygon(Unity.Mathematics.float2,System.Single,System.Int32)
+  name.vb: CreateRegularPolygon(float2, Single, Integer)
+  fullName: CGRust.Wrapper.PolygonMethods.CreateRegularPolygon(Unity.Mathematics.float2, float, int)
+  fullName.vb: CGRust.Wrapper.PolygonMethods.CreateRegularPolygon(Unity.Mathematics.float2, Single, Integer)
+  nameWithType: PolygonMethods.CreateRegularPolygon(float2, float, int)
+  nameWithType.vb: PolygonMethods.CreateRegularPolygon(float2, Single, Integer)
+- uid: CGRust.Wrapper.PolygonMethods.CreateRegularPolygon*
+  name: CreateRegularPolygon
+  href: api/CGRust.Wrapper.PolygonMethods.html#CGRust_Wrapper_PolygonMethods_CreateRegularPolygon_
+  commentId: Overload:CGRust.Wrapper.PolygonMethods.CreateRegularPolygon
+  isSpec: "True"
+  fullName: CGRust.Wrapper.PolygonMethods.CreateRegularPolygon
+  nameWithType: PolygonMethods.CreateRegularPolygon
+- uid: CGRust.Wrapper.PolygonMethods.TriangulatePolygon(CGRust.Wrapper.CGRustArray{Unity.Mathematics.float2})
+  name: TriangulatePolygon(CGRustArray<float2>)
+  href: api/CGRust.Wrapper.PolygonMethods.html#CGRust_Wrapper_PolygonMethods_TriangulatePolygon_CGRust_Wrapper_CGRustArray_Unity_Mathematics_float2__
+  commentId: M:CGRust.Wrapper.PolygonMethods.TriangulatePolygon(CGRust.Wrapper.CGRustArray{Unity.Mathematics.float2})
+  name.vb: TriangulatePolygon(CGRustArray(Of float2))
+  fullName: CGRust.Wrapper.PolygonMethods.TriangulatePolygon(CGRust.Wrapper.CGRustArray<Unity.Mathematics.float2>)
+  fullName.vb: CGRust.Wrapper.PolygonMethods.TriangulatePolygon(CGRust.Wrapper.CGRustArray(Of Unity.Mathematics.float2))
+  nameWithType: PolygonMethods.TriangulatePolygon(CGRustArray<float2>)
+  nameWithType.vb: PolygonMethods.TriangulatePolygon(CGRustArray(Of float2))
+- uid: CGRust.Wrapper.PolygonMethods.TriangulatePolygon*
+  name: TriangulatePolygon
+  href: api/CGRust.Wrapper.PolygonMethods.html#CGRust_Wrapper_PolygonMethods_TriangulatePolygon_
+  commentId: Overload:CGRust.Wrapper.PolygonMethods.TriangulatePolygon
+  isSpec: "True"
+  fullName: CGRust.Wrapper.PolygonMethods.TriangulatePolygon
+  nameWithType: PolygonMethods.TriangulatePolygon
+- uid: CGRust.Wrapper.UnsafeListExtension
+  name: UnsafeListExtension
+  href: api/CGRust.Wrapper.UnsafeListExtension.html
+  commentId: T:CGRust.Wrapper.UnsafeListExtension
+  fullName: CGRust.Wrapper.UnsafeListExtension
+  nameWithType: UnsafeListExtension
+- uid: CGRust.Wrapper.UnsafeListExtension.Reverse*
+  name: Reverse
+  href: api/CGRust.Wrapper.UnsafeListExtension.html#CGRust_Wrapper_UnsafeListExtension_Reverse_
+  commentId: Overload:CGRust.Wrapper.UnsafeListExtension.Reverse
+  isSpec: "True"
+  fullName: CGRust.Wrapper.UnsafeListExtension.Reverse
+  nameWithType: UnsafeListExtension.Reverse
+- uid: CGRust.Wrapper.UnsafeListExtension.Reverse``1(Unity.Collections.LowLevel.Unsafe.UnsafeList{``0}@)
+  name: Reverse<T>(ref UnsafeList<T>)
+  href: api/CGRust.Wrapper.UnsafeListExtension.html#CGRust_Wrapper_UnsafeListExtension_Reverse__1_Unity_Collections_LowLevel_Unsafe_UnsafeList___0___
+  commentId: M:CGRust.Wrapper.UnsafeListExtension.Reverse``1(Unity.Collections.LowLevel.Unsafe.UnsafeList{``0}@)
+  name.vb: Reverse(Of T)(UnsafeList(Of T))
+  fullName: CGRust.Wrapper.UnsafeListExtension.Reverse<T>(ref Unity.Collections.LowLevel.Unsafe.UnsafeList<T>)
+  fullName.vb: CGRust.Wrapper.UnsafeListExtension.Reverse(Of T)(Unity.Collections.LowLevel.Unsafe.UnsafeList(Of T))
+  nameWithType: UnsafeListExtension.Reverse<T>(ref UnsafeList<T>)
+  nameWithType.vb: UnsafeListExtension.Reverse(Of T)(UnsafeList(Of T))

@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: CGRust.Runtime.CardinalDirection
+  commentId: T:CGRust.Runtime.CardinalDirection
+  id: CardinalDirection
+  parent: CGRust.Runtime
+  children:
+  - CGRust.Runtime.CardinalDirection.X
+  - CGRust.Runtime.CardinalDirection.Y
+  - CGRust.Runtime.CardinalDirection.Z
+  langs:
+  - csharp
+  - vb
+  name: CardinalDirection
+  nameWithType: CardinalDirection
+  fullName: CGRust.Runtime.CardinalDirection
+  type: Enum
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Runtime/CardinalDirection.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: CardinalDirection
+    path: ../Scripts/Runtime/CardinalDirection.cs
+    startLine: 4
+  assemblies:
+  - CGRust.Runtime
+  namespace: CGRust.Runtime
+  syntax:
+    content: 'public enum CardinalDirection : byte'
+    content.vb: Public Enum CardinalDirection As Byte
+  extensionMethods:
+  - CGRust.Runtime.CardinalDirection.CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex
+  - CGRust.Runtime.CardinalDirection.CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices
+- uid: CGRust.Runtime.CardinalDirection.X
+  commentId: F:CGRust.Runtime.CardinalDirection.X
+  id: X
+  parent: CGRust.Runtime.CardinalDirection
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: CardinalDirection.X
+  fullName: CGRust.Runtime.CardinalDirection.X
+  type: Field
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Runtime/CardinalDirection.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: X
+    path: ../Scripts/Runtime/CardinalDirection.cs
+    startLine: 6
+  assemblies:
+  - CGRust.Runtime
+  namespace: CGRust.Runtime
+  syntax:
+    content: X = 0
+    return:
+      type: CGRust.Runtime.CardinalDirection
+- uid: CGRust.Runtime.CardinalDirection.Y
+  commentId: F:CGRust.Runtime.CardinalDirection.Y
+  id: Y
+  parent: CGRust.Runtime.CardinalDirection
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: CardinalDirection.Y
+  fullName: CGRust.Runtime.CardinalDirection.Y
+  type: Field
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Runtime/CardinalDirection.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: Y
+    path: ../Scripts/Runtime/CardinalDirection.cs
+    startLine: 7
+  assemblies:
+  - CGRust.Runtime
+  namespace: CGRust.Runtime
+  syntax:
+    content: Y = 1
+    return:
+      type: CGRust.Runtime.CardinalDirection
+- uid: CGRust.Runtime.CardinalDirection.Z
+  commentId: F:CGRust.Runtime.CardinalDirection.Z
+  id: Z
+  parent: CGRust.Runtime.CardinalDirection
+  langs:
+  - csharp
+  - vb
+  name: Z
+  nameWithType: CardinalDirection.Z
+  fullName: CGRust.Runtime.CardinalDirection.Z
+  type: Field
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Runtime/CardinalDirection.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: Z
+    path: ../Scripts/Runtime/CardinalDirection.cs
+    startLine: 8
+  assemblies:
+  - CGRust.Runtime
+  namespace: CGRust.Runtime
+  syntax:
+    content: Z = 2
+    return:
+      type: CGRust.Runtime.CardinalDirection
+references:
+- uid: CGRust.Runtime
+  commentId: N:CGRust.Runtime
+  href: CGRust.html
+  name: CGRust.Runtime
+  nameWithType: CGRust.Runtime
+  fullName: CGRust.Runtime
+  spec.csharp:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Runtime
+    name: Runtime
+    href: CGRust.Runtime.html
+  spec.vb:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Runtime
+    name: Runtime
+    href: CGRust.Runtime.html
+- uid: CGRust.Runtime.CardinalDirection.CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex
+  commentId: M:CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+  parent: CGRust.Runtime.CardinalDirectionExtensions
+  definition: CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+  href: CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetDirectionIndex_CGRust_Runtime_CardinalDirection_
+  name: GetDirectionIndex(CardinalDirection)
+  nameWithType: CardinalDirectionExtensions.GetDirectionIndex(CardinalDirection)
+  fullName: CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+  spec.csharp:
+  - uid: CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+    name: GetDirectionIndex
+    href: CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetDirectionIndex_CGRust_Runtime_CardinalDirection_
+  - name: (
+  - uid: CGRust.Runtime.CardinalDirection
+    name: CardinalDirection
+    href: CGRust.Runtime.CardinalDirection.html
+  - name: )
+  spec.vb:
+  - uid: CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+    name: GetDirectionIndex
+    href: CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetDirectionIndex_CGRust_Runtime_CardinalDirection_
+  - name: (
+  - uid: CGRust.Runtime.CardinalDirection
+    name: CardinalDirection
+    href: CGRust.Runtime.CardinalDirection.html
+  - name: )
+- uid: CGRust.Runtime.CardinalDirection.CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices
+  commentId: M:CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+  parent: CGRust.Runtime.CardinalDirectionExtensions
+  definition: CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+  href: CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetOrthogonalIndices_CGRust_Runtime_CardinalDirection_
+  name: GetOrthogonalIndices(CardinalDirection)
+  nameWithType: CardinalDirectionExtensions.GetOrthogonalIndices(CardinalDirection)
+  fullName: CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+  spec.csharp:
+  - uid: CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+    name: GetOrthogonalIndices
+    href: CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetOrthogonalIndices_CGRust_Runtime_CardinalDirection_
+  - name: (
+  - uid: CGRust.Runtime.CardinalDirection
+    name: CardinalDirection
+    href: CGRust.Runtime.CardinalDirection.html
+  - name: )
+  spec.vb:
+  - uid: CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+    name: GetOrthogonalIndices
+    href: CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetOrthogonalIndices_CGRust_Runtime_CardinalDirection_
+  - name: (
+  - uid: CGRust.Runtime.CardinalDirection
+    name: CardinalDirection
+    href: CGRust.Runtime.CardinalDirection.html
+  - name: )
+- uid: CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+  commentId: M:CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+  href: CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetDirectionIndex_CGRust_Runtime_CardinalDirection_
+  name: GetDirectionIndex(CardinalDirection)
+  nameWithType: CardinalDirectionExtensions.GetDirectionIndex(CardinalDirection)
+  fullName: CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+  spec.csharp:
+  - uid: CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+    name: GetDirectionIndex
+    href: CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetDirectionIndex_CGRust_Runtime_CardinalDirection_
+  - name: (
+  - uid: CGRust.Runtime.CardinalDirection
+    name: CardinalDirection
+    href: CGRust.Runtime.CardinalDirection.html
+  - name: )
+  spec.vb:
+  - uid: CGRust.Runtime.CardinalDirectionExtensions.GetDirectionIndex(CGRust.Runtime.CardinalDirection)
+    name: GetDirectionIndex
+    href: CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetDirectionIndex_CGRust_Runtime_CardinalDirection_
+  - name: (
+  - uid: CGRust.Runtime.CardinalDirection
+    name: CardinalDirection
+    href: CGRust.Runtime.CardinalDirection.html
+  - name: )
+- uid: CGRust.Runtime.CardinalDirectionExtensions
+  commentId: T:CGRust.Runtime.CardinalDirectionExtensions
+  parent: CGRust.Runtime
+  href: CGRust.Runtime.CardinalDirectionExtensions.html
+  name: CardinalDirectionExtensions
+  nameWithType: CardinalDirectionExtensions
+  fullName: CGRust.Runtime.CardinalDirectionExtensions
+- uid: CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+  commentId: M:CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+  href: CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetOrthogonalIndices_CGRust_Runtime_CardinalDirection_
+  name: GetOrthogonalIndices(CardinalDirection)
+  nameWithType: CardinalDirectionExtensions.GetOrthogonalIndices(CardinalDirection)
+  fullName: CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+  spec.csharp:
+  - uid: CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+    name: GetOrthogonalIndices
+    href: CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetOrthogonalIndices_CGRust_Runtime_CardinalDirection_
+  - name: (
+  - uid: CGRust.Runtime.CardinalDirection
+    name: CardinalDirection
+    href: CGRust.Runtime.CardinalDirection.html
+  - name: )
+  spec.vb:
+  - uid: CGRust.Runtime.CardinalDirectionExtensions.GetOrthogonalIndices(CGRust.Runtime.CardinalDirection)
+    name: GetOrthogonalIndices
+    href: CGRust.Runtime.CardinalDirectionExtensions.html#CGRust_Runtime_CardinalDirectionExtensions_GetOrthogonalIndices_CGRust_Runtime_CardinalDirection_
+  - name: (
+  - uid: CGRust.Runtime.CardinalDirection
+    name: CardinalDirection
+    href: CGRust.Runtime.CardinalDirection.html
+  - name: )
+- uid: CGRust.Runtime.CardinalDirection
+  commentId: T:CGRust.Runtime.CardinalDirection
+  parent: CGRust.Runtime
+  href: CGRust.Runtime.CardinalDirection.html
+  name: CardinalDirection
+  nameWithType: CardinalDirection
+  fullName: CGRust.Runtime.CardinalDirection

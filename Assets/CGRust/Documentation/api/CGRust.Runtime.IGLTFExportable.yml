@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: CGRust.Runtime.IGLTFExportable
+  commentId: T:CGRust.Runtime.IGLTFExportable
+  id: IGLTFExportable
+  parent: CGRust.Runtime
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IGLTFExportable
+  nameWithType: IGLTFExportable
+  fullName: CGRust.Runtime.IGLTFExportable
+  type: Interface
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Runtime/Structures/Interfaces/IGLTFExportable.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: IGLTFExportable
+    path: ../Scripts/Runtime/Structures/Interfaces/IGLTFExportable.cs
+    startLine: 2
+  assemblies:
+  - CGRust.Runtime
+  namespace: CGRust.Runtime
+  syntax:
+    content: public interface IGLTFExportable
+    content.vb: Public Interface IGLTFExportable
+references:
+- uid: CGRust.Runtime
+  commentId: N:CGRust.Runtime
+  href: CGRust.html
+  name: CGRust.Runtime
+  nameWithType: CGRust.Runtime
+  fullName: CGRust.Runtime
+  spec.csharp:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Runtime
+    name: Runtime
+    href: CGRust.Runtime.html
+  spec.vb:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Runtime
+    name: Runtime
+    href: CGRust.Runtime.html

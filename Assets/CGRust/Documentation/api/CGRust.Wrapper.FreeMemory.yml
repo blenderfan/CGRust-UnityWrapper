@@ -1,0 +1,594 @@
+### YamlMime:ManagedReference
+items:
+- uid: CGRust.Wrapper.FreeMemory
+  commentId: T:CGRust.Wrapper.FreeMemory
+  id: FreeMemory
+  parent: CGRust.Wrapper
+  children:
+  - CGRust.Wrapper.FreeMemory.FreeArray``1(CGRust.Wrapper.PArray{``0}@)
+  - CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2(CGRust.Wrapper.PArray{Unity.Mathematics.float2}@)
+  - CGRust.Wrapper.FreeMemory.cg_rust_free_array_int(CGRust.Wrapper.PArray{System.Int32}@)
+  - CGRust.Wrapper.FreeMemory.cg_rust_free_array_long(CGRust.Wrapper.PArray{System.Int64}@)
+  langs:
+  - csharp
+  - vb
+  name: FreeMemory
+  nameWithType: FreeMemory
+  fullName: CGRust.Wrapper.FreeMemory
+  type: Class
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Wrapper/Memory/FreeMemory.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: FreeMemory
+    path: ../Scripts/Wrapper/Memory/FreeMemory.cs
+    startLine: 9
+  assemblies:
+  - CGRust.Wrapper
+  namespace: CGRust.Wrapper
+  syntax:
+    content: public static class FreeMemory
+    content.vb: Public Module FreeMemory
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CGRust.Wrapper.FreeMemory.FreeArray``1(CGRust.Wrapper.PArray{``0}@)
+  commentId: M:CGRust.Wrapper.FreeMemory.FreeArray``1(CGRust.Wrapper.PArray{``0}@)
+  id: FreeArray``1(CGRust.Wrapper.PArray{``0}@)
+  parent: CGRust.Wrapper.FreeMemory
+  langs:
+  - csharp
+  - vb
+  name: FreeArray<T>(ref PArray<T>)
+  nameWithType: FreeMemory.FreeArray<T>(ref PArray<T>)
+  fullName: CGRust.Wrapper.FreeMemory.FreeArray<T>(ref CGRust.Wrapper.PArray<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/CGRust/Scripts/Wrapper/Memory/FreeMemory.cs
+      branch: main
+      repo: https://github.com/blenderfan/CGRust-UnityWrapper.git
+    id: FreeArray
+    path: ../Scripts/Wrapper/Memory/FreeMemory.cs
+    startLine: 36
+  assemblies:
+  - CGRust.Wrapper
+  namespace: CGRust.Wrapper
+  syntax:
+    content: >-
+      [BurstDiscard]
+
+      public static void FreeArray<T>(ref PArray<T> arr) where T : unmanaged
+    parameters:
+    - id: arr
+      type: CGRust.Wrapper.PArray{{T}}
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <BurstDiscard>
+
+      Public Shared Sub FreeArray(Of T As Structure)(arr As PArray(Of T))
+  overload: CGRust.Wrapper.FreeMemory.FreeArray*
+  attributes:
+  - type: Unity.Burst.BurstDiscardAttribute
+    ctor: Unity.Burst.BurstDiscardAttribute.#ctor
+    arguments: []
+  nameWithType.vb: FreeMemory.FreeArray(Of T)(PArray(Of T))
+  fullName.vb: CGRust.Wrapper.FreeMemory.FreeArray(Of T)(CGRust.Wrapper.PArray(Of T))
+  name.vb: FreeArray(Of T)(PArray(Of T))
+- uid: CGRust.Wrapper.FreeMemory.cg_rust_free_array_int(CGRust.Wrapper.PArray{System.Int32}@)
+  commentId: M:CGRust.Wrapper.FreeMemory.cg_rust_free_array_int(CGRust.Wrapper.PArray{System.Int32}@)
+  id: cg_rust_free_array_int(CGRust.Wrapper.PArray{System.Int32}@)
+  parent: CGRust.Wrapper.FreeMemory
+  langs:
+  - csharp
+  - vb
+  name: cg_rust_free_array_int(ref PArray<int>)
+  nameWithType: FreeMemory.cg_rust_free_array_int(ref PArray<int>)
+  fullName: CGRust.Wrapper.FreeMemory.cg_rust_free_array_int(ref CGRust.Wrapper.PArray<int>)
+  type: Method
+  assemblies:
+  - CGRust.Wrapper
+  namespace: CGRust.Wrapper
+  syntax:
+    content: public static extern void cg_rust_free_array_int(ref PArray<int> intArray)
+    parameters:
+    - id: intArray
+      type: CGRust.Wrapper.PArray{System.Int32}
+    content.vb: Public Shared Sub cg_rust_free_array_int(intArray As PArray(Of Integer))
+  overload: CGRust.Wrapper.FreeMemory.cg_rust_free_array_int*
+  nameWithType.vb: FreeMemory.cg_rust_free_array_int(PArray(Of Integer))
+  fullName.vb: CGRust.Wrapper.FreeMemory.cg_rust_free_array_int(CGRust.Wrapper.PArray(Of Integer))
+  name.vb: cg_rust_free_array_int(PArray(Of Integer))
+- uid: CGRust.Wrapper.FreeMemory.cg_rust_free_array_long(CGRust.Wrapper.PArray{System.Int64}@)
+  commentId: M:CGRust.Wrapper.FreeMemory.cg_rust_free_array_long(CGRust.Wrapper.PArray{System.Int64}@)
+  id: cg_rust_free_array_long(CGRust.Wrapper.PArray{System.Int64}@)
+  parent: CGRust.Wrapper.FreeMemory
+  langs:
+  - csharp
+  - vb
+  name: cg_rust_free_array_long(ref PArray<long>)
+  nameWithType: FreeMemory.cg_rust_free_array_long(ref PArray<long>)
+  fullName: CGRust.Wrapper.FreeMemory.cg_rust_free_array_long(ref CGRust.Wrapper.PArray<long>)
+  type: Method
+  assemblies:
+  - CGRust.Wrapper
+  namespace: CGRust.Wrapper
+  syntax:
+    content: public static extern void cg_rust_free_array_long(ref PArray<long> longArray)
+    parameters:
+    - id: longArray
+      type: CGRust.Wrapper.PArray{System.Int64}
+    content.vb: Public Shared Sub cg_rust_free_array_long(longArray As PArray(Of Long))
+  overload: CGRust.Wrapper.FreeMemory.cg_rust_free_array_long*
+  nameWithType.vb: FreeMemory.cg_rust_free_array_long(PArray(Of Long))
+  fullName.vb: CGRust.Wrapper.FreeMemory.cg_rust_free_array_long(CGRust.Wrapper.PArray(Of Long))
+  name.vb: cg_rust_free_array_long(PArray(Of Long))
+- uid: CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2(CGRust.Wrapper.PArray{Unity.Mathematics.float2}@)
+  commentId: M:CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2(CGRust.Wrapper.PArray{Unity.Mathematics.float2}@)
+  id: cg_rust_free_array_float2(CGRust.Wrapper.PArray{Unity.Mathematics.float2}@)
+  parent: CGRust.Wrapper.FreeMemory
+  langs:
+  - csharp
+  - vb
+  name: cg_rust_free_array_float2(ref PArray<float2>)
+  nameWithType: FreeMemory.cg_rust_free_array_float2(ref PArray<float2>)
+  fullName: CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2(ref CGRust.Wrapper.PArray<Unity.Mathematics.float2>)
+  type: Method
+  assemblies:
+  - CGRust.Wrapper
+  namespace: CGRust.Wrapper
+  syntax:
+    content: public static extern void cg_rust_free_array_float2(ref PArray<float2> float2Array)
+    parameters:
+    - id: float2Array
+      type: CGRust.Wrapper.PArray{Unity.Mathematics.float2}
+    content.vb: Public Shared Sub cg_rust_free_array_float2(float2Array As PArray(Of float2))
+  overload: CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2*
+  nameWithType.vb: FreeMemory.cg_rust_free_array_float2(PArray(Of float2))
+  fullName.vb: CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2(CGRust.Wrapper.PArray(Of Unity.Mathematics.float2))
+  name.vb: cg_rust_free_array_float2(PArray(Of float2))
+references:
+- uid: CGRust.Wrapper
+  commentId: N:CGRust.Wrapper
+  href: CGRust.html
+  name: CGRust.Wrapper
+  nameWithType: CGRust.Wrapper
+  fullName: CGRust.Wrapper
+  spec.csharp:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Wrapper
+    name: Wrapper
+    href: CGRust.Wrapper.html
+  spec.vb:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Wrapper
+    name: Wrapper
+    href: CGRust.Wrapper.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CGRust.Wrapper.FreeMemory.FreeArray*
+  commentId: Overload:CGRust.Wrapper.FreeMemory.FreeArray
+  href: CGRust.Wrapper.FreeMemory.html#CGRust_Wrapper_FreeMemory_FreeArray__1_CGRust_Wrapper_PArray___0___
+  name: FreeArray
+  nameWithType: FreeMemory.FreeArray
+  fullName: CGRust.Wrapper.FreeMemory.FreeArray
+- uid: CGRust.Wrapper.PArray{{T}}
+  commentId: T:CGRust.Wrapper.PArray{``0}
+  parent: CGRust.Wrapper
+  definition: CGRust.Wrapper.PArray`1
+  href: CGRust.Wrapper.PArray-1.html
+  name: PArray<T>
+  nameWithType: PArray<T>
+  fullName: CGRust.Wrapper.PArray<T>
+  nameWithType.vb: PArray(Of T)
+  fullName.vb: CGRust.Wrapper.PArray(Of T)
+  name.vb: PArray(Of T)
+  spec.csharp:
+  - uid: CGRust.Wrapper.PArray`1
+    name: PArray
+    href: CGRust.Wrapper.PArray-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: CGRust.Wrapper.PArray`1
+    name: PArray
+    href: CGRust.Wrapper.PArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CGRust.Wrapper.PArray`1
+  commentId: T:CGRust.Wrapper.PArray`1
+  href: CGRust.Wrapper.PArray-1.html
+  name: PArray<T>
+  nameWithType: PArray<T>
+  fullName: CGRust.Wrapper.PArray<T>
+  nameWithType.vb: PArray(Of T)
+  fullName.vb: CGRust.Wrapper.PArray(Of T)
+  name.vb: PArray(Of T)
+  spec.csharp:
+  - uid: CGRust.Wrapper.PArray`1
+    name: PArray
+    href: CGRust.Wrapper.PArray-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: CGRust.Wrapper.PArray`1
+    name: PArray
+    href: CGRust.Wrapper.PArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CGRust.Wrapper.FreeMemory.cg_rust_free_array_int*
+  commentId: Overload:CGRust.Wrapper.FreeMemory.cg_rust_free_array_int
+  isExternal: true
+  href: CGRust.Wrapper.FreeMemory.html#CGRust_Wrapper_FreeMemory_cg_rust_free_array_int_CGRust_Wrapper_PArray_System_Int32___
+  name: cg_rust_free_array_int
+  nameWithType: FreeMemory.cg_rust_free_array_int
+  fullName: CGRust.Wrapper.FreeMemory.cg_rust_free_array_int
+- uid: CGRust.Wrapper.PArray{System.Int32}
+  commentId: T:CGRust.Wrapper.PArray{System.Int32}
+  parent: CGRust.Wrapper
+  definition: CGRust.Wrapper.PArray`1
+  href: CGRust.Wrapper.PArray-1.html
+  name: PArray<int>
+  nameWithType: PArray<int>
+  fullName: CGRust.Wrapper.PArray<int>
+  nameWithType.vb: PArray(Of Integer)
+  fullName.vb: CGRust.Wrapper.PArray(Of Integer)
+  name.vb: PArray(Of Integer)
+  spec.csharp:
+  - uid: CGRust.Wrapper.PArray`1
+    name: PArray
+    href: CGRust.Wrapper.PArray-1.html
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: CGRust.Wrapper.PArray`1
+    name: PArray
+    href: CGRust.Wrapper.PArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: CGRust.Wrapper.FreeMemory.cg_rust_free_array_long*
+  commentId: Overload:CGRust.Wrapper.FreeMemory.cg_rust_free_array_long
+  isExternal: true
+  href: CGRust.Wrapper.FreeMemory.html#CGRust_Wrapper_FreeMemory_cg_rust_free_array_long_CGRust_Wrapper_PArray_System_Int64___
+  name: cg_rust_free_array_long
+  nameWithType: FreeMemory.cg_rust_free_array_long
+  fullName: CGRust.Wrapper.FreeMemory.cg_rust_free_array_long
+- uid: CGRust.Wrapper.PArray{System.Int64}
+  commentId: T:CGRust.Wrapper.PArray{System.Int64}
+  parent: CGRust.Wrapper
+  definition: CGRust.Wrapper.PArray`1
+  href: CGRust.Wrapper.PArray-1.html
+  name: PArray<long>
+  nameWithType: PArray<long>
+  fullName: CGRust.Wrapper.PArray<long>
+  nameWithType.vb: PArray(Of Long)
+  fullName.vb: CGRust.Wrapper.PArray(Of Long)
+  name.vb: PArray(Of Long)
+  spec.csharp:
+  - uid: CGRust.Wrapper.PArray`1
+    name: PArray
+    href: CGRust.Wrapper.PArray-1.html
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: CGRust.Wrapper.PArray`1
+    name: PArray
+    href: CGRust.Wrapper.PArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2*
+  commentId: Overload:CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2
+  isExternal: true
+  href: CGRust.Wrapper.FreeMemory.html#CGRust_Wrapper_FreeMemory_cg_rust_free_array_float2_CGRust_Wrapper_PArray_Unity_Mathematics_float2___
+  name: cg_rust_free_array_float2
+  nameWithType: FreeMemory.cg_rust_free_array_float2
+  fullName: CGRust.Wrapper.FreeMemory.cg_rust_free_array_float2
+- uid: CGRust.Wrapper.PArray{Unity.Mathematics.float2}
+  commentId: T:CGRust.Wrapper.PArray{Unity.Mathematics.float2}
+  parent: CGRust.Wrapper
+  definition: CGRust.Wrapper.PArray`1
+  href: CGRust.Wrapper.PArray-1.html
+  name: PArray<float2>
+  nameWithType: PArray<float2>
+  fullName: CGRust.Wrapper.PArray<Unity.Mathematics.float2>
+  nameWithType.vb: PArray(Of float2)
+  fullName.vb: CGRust.Wrapper.PArray(Of Unity.Mathematics.float2)
+  name.vb: PArray(Of float2)
+  spec.csharp:
+  - uid: CGRust.Wrapper.PArray`1
+    name: PArray
+    href: CGRust.Wrapper.PArray-1.html
+  - name: <
+  - uid: Unity.Mathematics.float2
+    name: float2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: CGRust.Wrapper.PArray`1
+    name: PArray
+    href: CGRust.Wrapper.PArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Unity.Mathematics.float2
+    name: float2
+    isExternal: true
+  - name: )

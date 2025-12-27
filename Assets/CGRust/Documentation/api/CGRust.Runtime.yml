@@ -1,0 +1,91 @@
+### YamlMime:ManagedReference
+items:
+- uid: CGRust.Runtime
+  commentId: N:CGRust.Runtime
+  id: CGRust.Runtime
+  children:
+  - CGRust.Runtime.CardinalDirection
+  - CGRust.Runtime.CardinalDirectionExtensions
+  - CGRust.Runtime.IGLTFExportable
+  - CGRust.Runtime.IGLTFImportable
+  - CGRust.Runtime.MeshUtil
+  - CGRust.Runtime.MeshVisualizationUtil
+  - CGRust.Runtime.Polygon2D
+  langs:
+  - csharp
+  - vb
+  name: CGRust.Runtime
+  nameWithType: CGRust.Runtime
+  fullName: CGRust.Runtime
+  type: Namespace
+  assemblies:
+  - CGRust.Runtime
+references:
+- uid: CGRust.Runtime.Polygon2D
+  commentId: T:CGRust.Runtime.Polygon2D
+  parent: CGRust.Runtime
+  href: CGRust.Runtime.Polygon2D.html
+  name: Polygon2D
+  nameWithType: Polygon2D
+  fullName: CGRust.Runtime.Polygon2D
+- uid: CGRust.Runtime.IGLTFImportable
+  commentId: T:CGRust.Runtime.IGLTFImportable
+  href: CGRust.Runtime.IGLTFImportable.html
+  name: IGLTFImportable
+  nameWithType: IGLTFImportable
+  fullName: CGRust.Runtime.IGLTFImportable
+- uid: CGRust.Runtime.CardinalDirection
+  commentId: T:CGRust.Runtime.CardinalDirection
+  parent: CGRust.Runtime
+  href: CGRust.Runtime.CardinalDirection.html
+  name: CardinalDirection
+  nameWithType: CardinalDirection
+  fullName: CGRust.Runtime.CardinalDirection
+- uid: CGRust.Runtime.CardinalDirectionExtensions
+  commentId: T:CGRust.Runtime.CardinalDirectionExtensions
+  parent: CGRust.Runtime
+  href: CGRust.Runtime.CardinalDirectionExtensions.html
+  name: CardinalDirectionExtensions
+  nameWithType: CardinalDirectionExtensions
+  fullName: CGRust.Runtime.CardinalDirectionExtensions
+- uid: CGRust.Runtime.IGLTFExportable
+  commentId: T:CGRust.Runtime.IGLTFExportable
+  parent: CGRust.Runtime
+  href: CGRust.Runtime.IGLTFExportable.html
+  name: IGLTFExportable
+  nameWithType: IGLTFExportable
+  fullName: CGRust.Runtime.IGLTFExportable
+- uid: CGRust.Runtime.MeshVisualizationUtil
+  commentId: T:CGRust.Runtime.MeshVisualizationUtil
+  href: CGRust.Runtime.MeshVisualizationUtil.html
+  name: MeshVisualizationUtil
+  nameWithType: MeshVisualizationUtil
+  fullName: CGRust.Runtime.MeshVisualizationUtil
+- uid: CGRust.Runtime.MeshUtil
+  commentId: T:CGRust.Runtime.MeshUtil
+  href: CGRust.Runtime.MeshUtil.html
+  name: MeshUtil
+  nameWithType: MeshUtil
+  fullName: CGRust.Runtime.MeshUtil
+- uid: CGRust.Runtime
+  commentId: N:CGRust.Runtime
+  href: CGRust.html
+  name: CGRust.Runtime
+  nameWithType: CGRust.Runtime
+  fullName: CGRust.Runtime
+  spec.csharp:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Runtime
+    name: Runtime
+    href: CGRust.Runtime.html
+  spec.vb:
+  - uid: CGRust
+    name: CGRust
+    href: CGRust.html
+  - name: .
+  - uid: CGRust.Runtime
+    name: Runtime
+    href: CGRust.Runtime.html

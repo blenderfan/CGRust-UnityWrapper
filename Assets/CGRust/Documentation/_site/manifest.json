@@ -1,0 +1,271 @@
+{
+  "source_base_path": "C:/Users/mario/Documents/Rust/cg_rust/CGRust-UnityWrapper/Assets/CGRust/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Runtime.CardinalDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Runtime.CardinalDirection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Runtime.CardinalDirection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Runtime.CardinalDirectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Runtime.CardinalDirectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Runtime.CardinalDirectionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Runtime.IGLTFExportable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Runtime.IGLTFExportable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Runtime.IGLTFExportable",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Runtime.IGLTFImportable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Runtime.IGLTFImportable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Runtime.IGLTFImportable",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Runtime.MeshUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Runtime.MeshUtil.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Runtime.MeshUtil",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Runtime.MeshVisualizationUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Runtime.MeshVisualizationUtil.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Runtime.MeshVisualizationUtil",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Runtime.Polygon2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Runtime.Polygon2D.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Runtime.Polygon2D",
+      "Summary": "<p sourcefile=\"api/CGRust.Runtime.Polygon2D.yml\" sourcestartlinenumber=\"1\">A 2D polygon, that can be used within Unity's Job System</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Runtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Runtime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Runtime",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Wrapper.CGRustArray-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Wrapper.CGRustArray-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Wrapper.CGRustArray<T>",
+      "Summary": "<p sourcefile=\"api/CGRust.Wrapper.CGRustArray-1.yml\" sourcestartlinenumber=\"1\">Helper class for handling arrays allocated in Rust. The Container can be used in\nBurst Jobs! However, disposing has to be done outside the job.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Wrapper.FreeMemory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Wrapper.FreeMemory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Wrapper.FreeMemory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Wrapper.PArray-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Wrapper.PArray-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Wrapper.PArray<T>",
+      "Summary": "<p sourcefile=\"api/CGRust.Wrapper.PArray-1.yml\" sourcestartlinenumber=\"1\">A helper struct for transferring data via P/Invoke from the Rust Library to managed C#</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Wrapper.PolygonMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Wrapper.PolygonMethods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Wrapper.PolygonMethods",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Wrapper.UnsafeListExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Wrapper.UnsafeListExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Wrapper.UnsafeListExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CGRust.Wrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CGRust.Wrapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CGRust.Wrapper",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: CGRust.Wrapper
+  commentId: N:CGRust.Wrapper
+  id: CGRust.Wrapper
+  children:
+  - CGRust.Wrapper.CGRustArray`1
+  - CGRust.Wrapper.FreeMemory
+  - CGRust.Wrapper.PArray`1
+  - CGRust.Wrapper.PolygonMethods
+  - CGRust.Wrapper.UnsafeListExtension
+  langs:
+  - csharp
+  - vb
+  name: CGRust.Wrapper
+  nameWithType: CGRust.Wrapper
+  fullName: CGRust.Wrapper
+  type: Namespace
+  assemblies:
+  - CGRust.Wrapper
+references:
+- uid: CGRust.Wrapper.FreeMemory
+  commentId: T:CGRust.Wrapper.FreeMemory
+  href: CGRust.Wrapper.FreeMemory.html
+  name: FreeMemory
+  nameWithType: FreeMemory
+  fullName: CGRust.Wrapper.FreeMemory
+- uid: CGRust.Wrapper.CGRustArray`1
+  commentId: T:CGRust.Wrapper.CGRustArray`1
+  href: CGRust.Wrapper.CGRustArray-1.html
+  name: CGRustArray<T>
+  nameWithType: CGRustArray<T>
+  fullName: CGRust.Wrapper.CGRustArray<T>
+  nameWithType.vb: CGRustArray(Of T)
+  fullName.vb: CGRust.Wrapper.CGRustArray(Of T)
+  name.vb: CGRustArray(Of T)
+  spec.csharp:
+  - uid: CGRust.Wrapper.CGRustArray`1
+    name: CGRustArray
+    href: CGRust.Wrapper.CGRustArray-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: CGRust.Wrapper.CGRustArray`1
+    name: CGRustArray
+    href: CGRust.Wrapper.CGRustArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CGRust.Wrapper.UnsafeListExtension
+  commentId: T:CGRust.Wrapper.UnsafeListExtension
+  href: CGRust.Wrapper.UnsafeListExtension.html
+  name: UnsafeListExtension
+  nameWithType: UnsafeListExtension
+  fullName: CGRust.Wrapper.UnsafeListExtension
+- uid: CGRust.Wrapper.PolygonMethods
+  commentId: T:CGRust.Wrapper.PolygonMethods
+  href: CGRust.Wrapper.PolygonMethods.html
+  name: PolygonMethods
+  nameWithType: PolygonMethods
+  fullName: CGRust.Wrapper.PolygonMethods
+- uid: CGRust.Wrapper.PArray`1
+  commentId: T:CGRust.Wrapper.PArray`1
+  href: CGRust.Wrapper.PArray-1.html
+  name: PArray<T>
+  nameWithType: PArray<T>
+  fullName: CGRust.Wrapper.PArray<T>
+  nameWithType.vb: PArray(Of T)
+  fullName.vb: CGRust.Wrapper.PArray(Of T)
+  name.vb: PArray(Of T)
+  spec.csharp:
+  - uid: CGRust.Wrapper.PArray`1
+    name: PArray
+    href: CGRust.Wrapper.PArray-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: CGRust.Wrapper.PArray`1
+    name: PArray
+    href: CGRust.Wrapper.PArray-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

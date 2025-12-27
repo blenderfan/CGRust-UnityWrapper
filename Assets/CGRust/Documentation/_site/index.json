@@ -1,0 +1,87 @@
+{
+  "api/CGRust.Runtime.CardinalDirection.html": {
+    "href": "api/CGRust.Runtime.CardinalDirection.html",
+    "title": "Enum CardinalDirection | CGRust for Unity",
+    "summary": "Enum CardinalDirection Namespace CGRust.Runtime Assembly CGRust.Runtime.dll public enum CardinalDirection : byte Extension Methods CardinalDirectionExtensions.GetDirectionIndex(CardinalDirection) CardinalDirectionExtensions.GetOrthogonalIndices(CardinalDirection) Fields X = 0 Y = 1 Z = 2"
+  },
+  "api/CGRust.Runtime.CardinalDirectionExtensions.html": {
+    "href": "api/CGRust.Runtime.CardinalDirectionExtensions.html",
+    "title": "Class CardinalDirectionExtensions | CGRust for Unity",
+    "summary": "Class CardinalDirectionExtensions Namespace CGRust.Runtime Assembly CGRust.Runtime.dll public static class CardinalDirectionExtensions Inheritance object CardinalDirectionExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GetDirectionIndex(CardinalDirection) public static int GetDirectionIndex(this CardinalDirection direction) Parameters direction CardinalDirection Returns int GetOrthogonalIndices(CardinalDirection) public static int2 GetOrthogonalIndices(this CardinalDirection direction) Parameters direction CardinalDirection Returns int2"
+  },
+  "api/CGRust.Runtime.IGLTFExportable.html": {
+    "href": "api/CGRust.Runtime.IGLTFExportable.html",
+    "title": "Interface IGLTFExportable | CGRust for Unity",
+    "summary": "Interface IGLTFExportable Namespace CGRust.Runtime Assembly CGRust.Runtime.dll public interface IGLTFExportable"
+  },
+  "api/CGRust.Runtime.IGLTFImportable.html": {
+    "href": "api/CGRust.Runtime.IGLTFImportable.html",
+    "title": "Interface IGLTFImportable | CGRust for Unity",
+    "summary": "Interface IGLTFImportable Namespace CGRust.Runtime Assembly CGRust.Runtime.dll public interface IGLTFImportable"
+  },
+  "api/CGRust.Runtime.MeshUtil.html": {
+    "href": "api/CGRust.Runtime.MeshUtil.html",
+    "title": "Class MeshUtil | CGRust for Unity",
+    "summary": "Class MeshUtil Namespace CGRust.Runtime Assembly CGRust.Runtime.dll public static class MeshUtil Inheritance object MeshUtil Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods ToHardEdgesMesh(Mesh, string) Turns a mesh with shared vertices into a mesh were each triangle has its own vertices (producing a hard-edged mesh) public static Mesh ToHardEdgesMesh(Mesh original, string name = \"\") Parameters original Mesh name string Returns Mesh"
+  },
+  "api/CGRust.Runtime.MeshVisualizationUtil.html": {
+    "href": "api/CGRust.Runtime.MeshVisualizationUtil.html",
+    "title": "Class MeshVisualizationUtil | CGRust for Unity",
+    "summary": "Class MeshVisualizationUtil Namespace CGRust.Runtime Assembly CGRust.Runtime.dll public static class MeshVisualizationUtil Inheritance object MeshVisualizationUtil Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddTriangleGradientColors(ref Mesh, Gradient) Generates and adds vertex colors to a mesh for each triangle. This will only produce good results, if the mesh only contains hard-edges! public static void AddTriangleGradientColors(ref Mesh mesh, Gradient gradient) Parameters mesh Mesh gradient Gradient"
+  },
+  "api/CGRust.Runtime.Polygon2D.html": {
+    "href": "api/CGRust.Runtime.Polygon2D.html",
+    "title": "Struct Polygon2D | CGRust for Unity",
+    "summary": "Struct Polygon2D Namespace CGRust.Runtime Assembly CGRust.Runtime.dll A 2D polygon, that can be used within Unity's Job System public struct Polygon2D : IDisposable, IGLTFExportable Implements IDisposable IGLTFExportable Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors Polygon2D(CGRustArray<float2>) public Polygon2D(CGRustArray<float2> points) Parameters points CGRustArray<float2> Properties IsCreated public bool IsCreated { get; } Property Value bool Methods CreateRegular(float2, float, int) Creates a regular polygon where each line segment has the same length and the angle between all edges are equal as well. public static Polygon2D CreateRegular(float2 center, float radius, int corners) Parameters center float2 radius float corners int Returns Polygon2D Dispose() [BurstDiscard] public void Dispose() ToMesh(CardinalDirection, string) Transforms the Polygons into a Unity Mesh [BurstDiscard] public Mesh ToMesh(CardinalDirection up, string name = \"\") Parameters up CardinalDirection name string The name assigned to the new mesh Returns Mesh"
+  },
+  "api/CGRust.Runtime.html": {
+    "href": "api/CGRust.Runtime.html",
+    "title": "Namespace CGRust.Runtime | CGRust for Unity",
+    "summary": "Namespace CGRust.Runtime Classes CardinalDirectionExtensions MeshUtil MeshVisualizationUtil Structs Polygon2D A 2D polygon, that can be used within Unity's Job System Interfaces IGLTFExportable IGLTFImportable Enums CardinalDirection"
+  },
+  "api/CGRust.Wrapper.CGRustArray-1.html": {
+    "href": "api/CGRust.Wrapper.CGRustArray-1.html",
+    "title": "Struct CGRustArray<T> | CGRust for Unity",
+    "summary": "Struct CGRustArray<T> Namespace CGRust.Wrapper Assembly CGRust.Wrapper.dll Helper class for handling arrays allocated in Rust. The Container can be used in Burst Jobs! However, disposing has to be done outside the job. public struct CGRustArray<T> where T : unmanaged Type Parameters T Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors CGRustArray(UnsafeList<T>) public CGRustArray(UnsafeList<T> list) Parameters list UnsafeList<T> Fields data public UnsafeList<T> data Field Value UnsafeList<T> Methods Dispose() [BurstDiscard] public void Dispose()"
+  },
+  "api/CGRust.Wrapper.FreeMemory.html": {
+    "href": "api/CGRust.Wrapper.FreeMemory.html",
+    "title": "Class FreeMemory | CGRust for Unity",
+    "summary": "Class FreeMemory Namespace CGRust.Wrapper Assembly CGRust.Wrapper.dll public static class FreeMemory Inheritance object FreeMemory Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods FreeArray<T>(ref PArray<T>) [BurstDiscard] public static void FreeArray<T>(ref PArray<T> arr) where T : unmanaged Parameters arr PArray<T> Type Parameters T cg_rust_free_array_float2(ref PArray<float2>) public static extern void cg_rust_free_array_float2(ref PArray<float2> float2Array) Parameters float2Array PArray<float2> cg_rust_free_array_int(ref PArray<int>) public static extern void cg_rust_free_array_int(ref PArray<int> intArray) Parameters intArray PArray<int> cg_rust_free_array_long(ref PArray<long>) public static extern void cg_rust_free_array_long(ref PArray<long> longArray) Parameters longArray PArray<long>"
+  },
+  "api/CGRust.Wrapper.PArray-1.html": {
+    "href": "api/CGRust.Wrapper.PArray-1.html",
+    "title": "Struct PArray<T> | CGRust for Unity",
+    "summary": "Struct PArray<T> Namespace CGRust.Wrapper Assembly CGRust.Wrapper.dll A helper struct for transferring data via P/Invoke from the Rust Library to managed C# public struct PArray<T> where T : unmanaged Type Parameters T Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Fields data public T* data Field Value T* length public long length Field Value long"
+  },
+  "api/CGRust.Wrapper.PolygonMethods.html": {
+    "href": "api/CGRust.Wrapper.PolygonMethods.html",
+    "title": "Class PolygonMethods | CGRust for Unity",
+    "summary": "Class PolygonMethods Namespace CGRust.Wrapper Assembly CGRust.Wrapper.dll public static class PolygonMethods Inheritance object PolygonMethods Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CreateRegularPolygon(float2, float, int) Creates a regular polygon where each line segment has the same length and the angle between all edges are equal as well. public static CGRustArray<float2> CreateRegularPolygon(float2 center, float radius, int corners) Parameters center float2 radius float corners int Returns CGRustArray<float2> TriangulatePolygon(CGRustArray<float2>) Splits the polygon into triangles and returns a list of integers, where each triple forms a triangle as part of the triangulation of the polygon. The method will return an empty array if the polygon is self-intersecting public static CGRustArray<long> TriangulatePolygon(CGRustArray<float2> points) Parameters points CGRustArray<float2> Returns CGRustArray<long>"
+  },
+  "api/CGRust.Wrapper.UnsafeListExtension.html": {
+    "href": "api/CGRust.Wrapper.UnsafeListExtension.html",
+    "title": "Class UnsafeListExtension | CGRust for Unity",
+    "summary": "Class UnsafeListExtension Namespace CGRust.Wrapper Assembly CGRust.Wrapper.dll public static class UnsafeListExtension Inheritance object UnsafeListExtension Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Reverse<T>(ref UnsafeList<T>) Reverses the UnsafeList public static void Reverse<T>(this ref UnsafeList<T> unsafeList) where T : unmanaged Parameters unsafeList UnsafeList<T> Type Parameters T"
+  },
+  "api/CGRust.Wrapper.html": {
+    "href": "api/CGRust.Wrapper.html",
+    "title": "Namespace CGRust.Wrapper | CGRust for Unity",
+    "summary": "Namespace CGRust.Wrapper Classes FreeMemory PolygonMethods UnsafeListExtension Structs CGRustArray<T> Helper class for handling arrays allocated in Rust. The Container can be used in Burst Jobs! However, disposing has to be done outside the job. PArray<T> A helper struct for transferring data via P/Invoke from the Rust Library to managed C#"
+  },
+  "getting-started.html": {
+    "href": "getting-started.html",
+    "title": "Getting Started | CGRust for Unity",
+    "summary": "Getting Started"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | CGRust for Unity",
+    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+  },
+  "introduction.html": {
+    "href": "introduction.html",
+    "title": "Introduction | CGRust for Unity",
+    "summary": "Introduction"
+  }
+}

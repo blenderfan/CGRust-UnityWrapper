@@ -61,6 +61,9 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+!CGRust.Runtime.csproj
+!CGRust.Wrapper.csproj
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta

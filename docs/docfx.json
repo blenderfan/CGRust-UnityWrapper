@@ -7,7 +7,7 @@
           "src": "../",
           "files": [
             "CGRust.Runtime.csproj",
-	    "CGRust.Wrapper.csproj"
+	          "CGRust.Wrapper.csproj"
           ]
         }
       ],
@@ -22,14 +22,14 @@
           "**/*.{md,yml}"
         ],
         "exclude": [
-          "_site/**"
+          "xrefmap.yml"
         ]
       }
     ],
     "resource": [
       {
         "files": [
-          "images/**"
+          "media/*.png"
         ]
       }
     ],
@@ -38,11 +38,17 @@
       "default",
       "modern"
     ],
+    "postProcessors": [ "ExtractSearchIndex" ],
     "globalMetadata": {
       "_appName": "CGRust for Unity",
       "_appTitle": "CGRust for Unity",
       "_enableSearch": true,
       "pdf": false
+    },
+    "fileMetadata": {
+      "_noindex": {
+        "media/**": true
+      }
     }
   }
 }

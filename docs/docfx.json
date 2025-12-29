@@ -18,6 +18,7 @@
     "content": [
       {
         "files": [
+	  "../*.{md,yml}",
           "**/*.{md,yml}"
         ],
         "exclude": [

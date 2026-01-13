@@ -1,3 +1,6 @@
+using Codice.CM.Common;
+using Unity.Collections;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -12,6 +15,7 @@ namespace CGRust.Runtime
         /// <returns></returns>
         public unsafe static Mesh ToHardEdgesMesh(Mesh original, string name = "")
         {
+            
             var originalArray = Mesh.AcquireReadOnlyMeshData(original);
             var originalData = originalArray[0];
 
@@ -22,44 +26,78 @@ namespace CGRust.Runtime
 
             int indices = original.triangles.Length;
 
-            data.SetVertexBufferParams(indices, original.GetVertexAttributes());
+            var vertexAttributes = original.GetVertexAttributes();
+
+            data.SetVertexBufferParams(indices, vertexAttributes);
             data.SetIndexBufferParams(indices, idxFormat);
 
-            var positions = data.GetVertexData<Vector3>();
-            var originalPositions = originalData.GetVertexData<Vector3>();  
-
-
+            NativeArray<uint> triangleCopy = new NativeArray<uint>(indices, Allocator.TempJob);
             if (idxFormat == IndexFormat.UInt16)
             {
                 var indexArr = data.GetIndexData<ushort>();
                 var originalTriangles = originalData.GetIndexData<ushort>();
-
-                for (int i = 0; i < indices; i++)
+                for (int j = 0; j < indices; j++)
                 {
-                    uint idx = originalTriangles[i];
-                    var vertex = originalPositions[(int)idx];
-                    positions[i] = vertex;
-                    indexArr[i] = (ushort)i;
+                    indexArr[j] = (ushort)j;
                 }
+                UnsafeUtility.MemCpyStride(triangleCopy.GetUnsafePtr(), UnsafeUtility.SizeOf<uint>(), originalTriangles.GetUnsafeReadOnlyPtr(), UnsafeUtility.SizeOf<ushort>(),
+                    UnsafeUtility.SizeOf<ushort>(), indices);
             }
             else
             {
                 var indexArr = data.GetIndexData<uint>();
                 var originalTriangles = originalData.GetIndexData<uint>();
-
-                for (int i = 0; i < indices; i++)
+                for (int j = 0; j < indices; j++)
                 {
-                    uint idx = originalTriangles[i];
-                    var vertex = originalPositions[(int)idx];
-                    positions[i] = vertex;
-                    indexArr[i] = (uint)i;
+                    indexArr[j] = (uint)j;
+                }
+                UnsafeUtility.MemCpy(triangleCopy.GetUnsafePtr(), originalTriangles.GetUnsafeReadOnlyPtr(), UnsafeUtility.SizeOf<uint>() * indices);
+            }
+
+            for (int i = 0; i < vertexAttributes.Length; i++)
+            {
+
+                var attribute = vertexAttributes[i];
+
+                var length = attribute.dimension;
+                if (attribute.format == VertexAttributeFormat.SInt16
+                    || attribute.format == VertexAttributeFormat.Float16
+                    || attribute.format == VertexAttributeFormat.SNorm16
+                    || attribute.format == VertexAttributeFormat.UInt16
+                    || attribute.format == VertexAttributeFormat.UNorm16)
+                {
+                    length *= 2;
+                }
+                else if (attribute.format == VertexAttributeFormat.Float32
+                    || attribute.format == VertexAttributeFormat.SInt32
+                    || attribute.format == VertexAttributeFormat.UInt32)
+                {
+                    length *= 4;
+                }
+
+                var vertexData = data.GetVertexData<byte>();
+                var originalVertexData = originalData.GetVertexData<byte>();
+
+                var vertexDataPtr = (byte*)vertexData.GetUnsafePtr();
+                var originalVertexDataPtr = (byte*)originalVertexData.GetUnsafeReadOnlyPtr();
+
+                for (int j = 0; j < indices; j++)
+                {
+                    uint idx = triangleCopy[j];
+                    UnsafeUtility.MemCpy(vertexDataPtr + j * length, originalVertexDataPtr + idx * length, length);
                 }
             }
 
-            originalArray.Dispose();
+            data.subMeshCount = originalData.subMeshCount;
+            
+            for(int i = 0; i < originalData.subMeshCount; i++)
+            {
+                var subMeshDescriptor = originalData.GetSubMesh(i);
+                data.SetSubMesh(i, subMeshDescriptor);
+            }
 
-            data.subMeshCount = 1;
-            data.SetSubMesh(0, new SubMeshDescriptor(0, original.triangles.Length));
+            originalArray.Dispose();
+            triangleCopy.Dispose();
 
             var mesh = new Mesh();
             mesh.name = name;

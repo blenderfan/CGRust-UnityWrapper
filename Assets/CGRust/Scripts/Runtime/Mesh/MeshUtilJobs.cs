@@ -27,7 +27,7 @@ namespace CGRust.Runtime
 
                 this.data.SetVertexBufferParams(this.indices, this.attributes);
                 this.data.SetIndexBufferParams(this.indices, idxFormat);
-
+                
                 NativeArray<uint> triangleCopy = new NativeArray<uint>(this.indices, Allocator.Temp);
                 if (idxFormat == IndexFormat.UInt16)
                 {

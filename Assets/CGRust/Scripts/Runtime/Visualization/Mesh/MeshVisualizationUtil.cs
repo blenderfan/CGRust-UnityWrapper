@@ -11,7 +11,6 @@ namespace CGRust.Runtime
         /// </summary>
         public static void AddTriangleGradientColors(ref Mesh mesh, Gradient gradient)
         {
-
             var vertices = mesh.vertices;
             var colors = new Color[vertices.Length];
 
@@ -24,7 +23,7 @@ namespace CGRust.Runtime
                 int b = triangles[i * 3 + 1];
                 int c = triangles[i * 3 + 2];
 
-                float rnd = UnityEngine.Random.value;
+                float rnd = Random.value;
                 var color = gradient.Evaluate(rnd);
 
                 colors[a] = color;

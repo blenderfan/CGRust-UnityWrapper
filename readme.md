@@ -1,4 +1,11 @@
 
+<a href="https://github.com/blenderfan/CGRust-UnityWrapper/stargazers"><img src="https://img.shields.io/github/stars/blenderfan/CGRust-UnityWrapper" alt="Stars Badge"/></a>
+<a href="https://github.com/blenderfan/CGRust-UnityWrapper/network/members"><img src="https://img.shields.io/github/forks/blenderfan/CGRust-UnityWrapper" alt="Forks Badge"/></a>
+<a href="https://github.com/blenderfan/CGRust-UnityWrapper/pulls"><img src="https://img.shields.io/github/issues-pr/blenderfan/CGRust-UnityWrapper" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/blenderfan/CGRust-UnityWrapper/issues"><img src="https://img.shields.io/github/issues/blenderfan/CGRust-UnityWrapper" alt="Issues Badge"/></a>
+<a href="https://github.com/blenderfan/CGRust-UnityWrapper/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/blenderfan/CGRust-UnityWrapper?color=2b9348"></a>
+<a href="https://github.com/blenderfan/CGRust-UnityWrapper/blob/master/LICENSE"><img src="https://img.shields.io/github/license/blenderfan/CGRust-UnityWrapper?color=2b9348" alt="License Badge"/></a>
+
 ## Table of contents
 - [Introduction](#introduction)
 - [Overview](#overview)

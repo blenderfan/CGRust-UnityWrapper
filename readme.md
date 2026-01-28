@@ -1,4 +1,6 @@
 
+![CG Rust Unity Banner](https://github.com/blenderfan/CGRust-UnityWrapper/blob/master/cg_rust_unity_banner.png)
+
 <a href="https://github.com/blenderfan/CGRust-UnityWrapper/stargazers"><img src="https://img.shields.io/github/stars/blenderfan/CGRust-UnityWrapper" alt="Stars Badge"/></a>
 <a href="https://github.com/blenderfan/CGRust-UnityWrapper/network/members"><img src="https://img.shields.io/github/forks/blenderfan/CGRust-UnityWrapper" alt="Forks Badge"/></a>
 <a href="https://github.com/blenderfan/CGRust-UnityWrapper/pulls"><img src="https://img.shields.io/github/issues-pr/blenderfan/CGRust-UnityWrapper" alt="Pull Requests Badge"/></a>

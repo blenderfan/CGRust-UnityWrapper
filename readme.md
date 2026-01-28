@@ -1,5 +1,5 @@
 
-![CG Rust Unity Banner](https://github.com/blenderfan/CGRust-UnityWrapper/blob/master/cg_rust_unity_banner.png)
+![CG Rust Unity Banner](https://github.com/blenderfan/CGRust-UnityWrapper/blob/main/cg_rust_unity_banner.png)
 
 <a href="https://github.com/blenderfan/CGRust-UnityWrapper/stargazers"><img src="https://img.shields.io/github/stars/blenderfan/CGRust-UnityWrapper" alt="Stars Badge"/></a>
 <a href="https://github.com/blenderfan/CGRust-UnityWrapper/network/members"><img src="https://img.shields.io/github/forks/blenderfan/CGRust-UnityWrapper" alt="Forks Badge"/></a>
@@ -23,7 +23,7 @@ Unity.
 
 Right now, the project only contains some call tests for the rust library creating a regular polygon and shaders for display ^^
 
-![Hexagon from Rust](https://github.com/blenderfan/CGRust-UnityWrapper/blob/master/images/hexagon_from_rust.jpg)
+![Hexagon from Rust](https://github.com/blenderfan/CGRust-UnityWrapper/blob/main/images/hexagon_from_rust.jpg)
 
 The rust standard libary is the same as the one used in the [CG Rust](https://github.com/blenderfan/cg-rust) project. If you require a different
 version, you will have to build that project first and copy the DLLs into the Plugins folder!
